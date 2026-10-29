@@ -146,6 +146,30 @@ python src/collect_forecasts.py --save-raw
 python src/collect_observations.py --save-raw
 ```
 
+## Historical backfill
+
+Live collection began in October 2026, which is too short for model training.
+`src/backfill_history.py` downloads 2023-to-date history from free sources:
+
+| Source | Data | Coverage |
+| --- | --- | --- |
+| Open-Meteo Previous Runs API | GFS, ICON, GEM, ECMWF forecasts made ~24h (`day1`) and ~48h (`day2`) ahead | GFS 2023+, others 2024+ |
+| Iowa Environmental Mesonet | NWS GFS MOS guidance, 12Z run on the previous day | 2023+ |
+| NOAA/NCEI | Observed daily highs/lows | 2023+ |
+| Kalshi (live and `/historical` endpoints) | Settled brackets, results, and settled values | Varies by series |
+
+Model forecasts are converted to daily extrema over the local-standard-time day
+used by Kalshi, and days with missing hours are left blank. Per-station files are
+cached under `data/history/<source>/`, so interrupted runs resume where they stopped.
+`src/build_dataset.py` joins them into `data/history/dataset.csv`, one row per
+station per day. NOAA highs matched Kalshi settled values on 99.7% of overlapping days.
+
+```shell
+python src/backfill_history.py            # all sources; re-run to retry failures
+python src/backfill_history.py --sources kalshi
+python src/build_dataset.py
+```
+
 ## Extending collection
 
 Add provider adapters under [`src/weather_pipeline/providers/`](src/weather_pipeline/providers/),

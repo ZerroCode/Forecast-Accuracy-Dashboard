@@ -43,10 +43,29 @@ def get_json(
     headers: dict[str, str] | None = None,
     redacted_url: str | None = None,
 ) -> Any:
+    return _fetch(url, json.load, "application/json", attempts=attempts,
+                  timeout_seconds=timeout_seconds, headers=headers, redacted_url=redacted_url)
+
+
+def get_text(url: str, *, attempts: int = 3, timeout_seconds: int = 60) -> str:
+    return _fetch(url, lambda response: response.read().decode("utf-8"), "text/csv, */*",
+                  attempts=attempts, timeout_seconds=timeout_seconds)
+
+
+def _fetch(
+    url: str,
+    parse,
+    accept: str,
+    *,
+    attempts: int,
+    timeout_seconds: int,
+    headers: dict[str, str] | None = None,
+    redacted_url: str | None = None,
+) -> Any:
     if attempts < 1 or timeout_seconds <= 0:
         raise ValueError("attempts and timeout_seconds must be positive")
     request_headers = {
-        "Accept": "application/json",
+        "Accept": accept,
         "User-Agent": os.getenv("WEATHER_USER_AGENT", DEFAULT_USER_AGENT),
     }
     request_headers.update(headers or {})
@@ -59,7 +78,7 @@ def get_json(
         try:
             request = Request(url, headers=request_headers)
             with urlopen(request, timeout=timeout_seconds) as response:
-                return json.load(response)
+                return parse(response)
         except HTTPError as exc:
             status_code = exc.code
             error_type = f"HTTP {exc.code}"
