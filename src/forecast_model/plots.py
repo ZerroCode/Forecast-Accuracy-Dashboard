@@ -9,15 +9,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from forecast_model.data import CITY, LABELS, SOURCES
+from forecast_model.data import CITY, label
 
 ACCENT, BASE = "#2a78d6", "#9aa5b1"
 
 
-def bias_by_city(df: pd.DataFrame, metric: str, path: Path) -> None:
+def bias_by_city(df: pd.DataFrame, metric: str, sources, path: Path) -> None:
     target = f"obs_{metric}_f"
-    bias = pd.DataFrame({LABELS[s]: (df[f"{s}_{metric}_f"] - df[target]).groupby(df["station_id"]).mean()
-                         for s in SOURCES}).rename(index=CITY)
+    bias = pd.DataFrame({label(s): (df[f"{s}_{metric}_f"] - df[target]).groupby(df["station_id"]).mean()
+                         for s in sources}).rename(index=CITY)
     fig, ax = plt.subplots(figsize=(8, 4.5))
     im = ax.imshow(bias.values, cmap="RdBu_r", vmin=-5, vmax=5)
     ax.set_xticks(range(len(bias.columns)), bias.columns)
@@ -30,12 +30,12 @@ def bias_by_city(df: pd.DataFrame, metric: str, path: Path) -> None:
     _save(fig, path)
 
 
-def error_by_month(df: pd.DataFrame, metric: str, path: Path) -> None:
+def error_by_month(df: pd.DataFrame, metric: str, sources, path: Path) -> None:
     target = f"obs_{metric}_f"
     month = pd.to_datetime(df["date"]).dt.month
     fig, ax = plt.subplots(figsize=(8, 4))
-    for s in SOURCES:
-        ax.plot(range(1, 13), (df[f"{s}_{metric}_f"] - df[target]).abs().groupby(month).mean(), label=LABELS[s])
+    for s in sources:
+        ax.plot(range(1, 13), (df[f"{s}_{metric}_f"] - df[target]).abs().groupby(month).mean(), label=label(s))
     ax.set_xticks(range(1, 13))
     ax.set_xlabel("Month")
     ax.set_ylabel("Mean absolute error, °F")

@@ -1,18 +1,21 @@
 """Download Kalshi bracket prices at a fixed moment for each settled market.
 
 For every market in data/history/kalshi/<series>.csv, records the yes bid/ask
-from the hourly candle ending at the start of the measurement day (local
-standard midnight), minus --hours-before. That is roughly when day-ahead
-forecasts were last updated, so model and market see similar information.
-Output: data/history/kalshi_prices/<series>.csv. Finished tickers are skipped.
+from the hourly candle ending at one of two prediction cutoffs:
+  midnight  start of the measured day (local standard midnight)
+            -> data/history/kalshi_prices/<series>.csv
+  open      11 AM Eastern the day before, one hour after markets open at 10 AM ET
+            (quotes are thin right at opening) -> data/history/kalshi_prices_open/
+Model and market are always compared at the same cutoff. Finished tickers are skipped.
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, time, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from backfill_history import write_csv
 from weather_pipeline.config import load_stations
@@ -22,6 +25,13 @@ from weather_pipeline.windows import standard_day
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 FIELDS = ["market_ticker", "date", "snapshot_ts", "yes_bid", "yes_ask", "last_price", "volume"]
+OUTPUT_DIRS = {"midnight": "kalshi_prices", "open": "kalshi_prices_open"}
+
+
+def snapshot_time(target: date, zone: str, cutoff: str) -> datetime:
+    if cutoff == "open":
+        return datetime.combine(target - timedelta(days=1), time(11), ZoneInfo("America/New_York"))
+    return standard_day(target, zone).start
 
 
 def candle_value(candle: dict, side: str) -> str:
@@ -31,9 +41,8 @@ def candle_value(candle: dict, side: str) -> str:
     return "" if value is None else value
 
 
-def price_row(client: KalshiClient, series: str, market: dict, zone: str, hours_before: int) -> dict:
-    window = standard_day(date.fromisoformat(market["date"]), zone)
-    snapshot = int((window.start - timedelta(hours=hours_before)).timestamp())
+def price_row(client: KalshiClient, series: str, market: dict, zone: str, cutoff: str) -> dict:
+    snapshot = int(snapshot_time(date.fromisoformat(market["date"]), zone, cutoff).timestamp())
     query = {"start_ts": snapshot - 3600, "end_ts": snapshot, "period_interval": 60}
     ticker = market["market_ticker"]
     try:
@@ -52,7 +61,7 @@ def main() -> int:
     parser.add_argument("--series", nargs="+", required=True, help="e.g. KXHIGHNY KXHIGHCHI")
     parser.add_argument("--start", type=date.fromisoformat, default=date(2025, 1, 1))
     parser.add_argument("--end", type=date.fromisoformat, default=date.today())
-    parser.add_argument("--hours-before", type=int, default=0)
+    parser.add_argument("--cutoff", choices=OUTPUT_DIRS, default="midnight")
     parser.add_argument("--history-dir", type=Path, default=PROJECT_ROOT / "data/history")
     parser.add_argument("--stations", type=Path, default=PROJECT_ROOT / "config/stations.csv")
     args = parser.parse_args()
@@ -64,7 +73,7 @@ def main() -> int:
             # Legacy 2021-2022 markets lack strike types and are not comparable.
             markets = [m for m in csv.DictReader(handle) if m["strike_type"] and m["date"]
                        and args.start.isoformat() <= m["date"] <= args.end.isoformat()]
-        output = args.history_dir / "kalshi_prices" / f"{series}.csv"
+        output = args.history_dir / OUTPUT_DIRS[args.cutoff] / f"{series}.csv"
         rows = {}
         if output.exists():
             with output.open(newline="", encoding="utf-8") as handle:
@@ -72,7 +81,7 @@ def main() -> int:
         for count, market in enumerate(m for m in markets if m["market_ticker"] not in rows):
             try:
                 rows[market["market_ticker"]] = price_row(
-                    client, series, market, zones[market["station_id"]], args.hours_before)
+                    client, series, market, zones[market["station_id"]], args.cutoff)
             except Exception as exc:
                 failures += 1
                 print(f"{market['market_ticker']}: {exc}", file=sys.stderr)

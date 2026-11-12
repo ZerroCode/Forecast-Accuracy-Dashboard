@@ -23,6 +23,8 @@ MOS_CSV = """runtime,ftime,model,n_x,tmp
 2024-02-29 12:00:00,2024-03-02 00:00:00,GFS,44.0,40
 2024-02-29 12:00:00,2024-03-01 15:00:00,GFS,,35
 2024-03-01 00:00:00,2024-03-01 12:00:00,GFS,10.0,30
+2024-02-29 00:00:00,2024-03-01 12:00:00,GFS,31.0,30
+2024-02-29 00:00:00,2024-03-02 00:00:00,GFS,45.0,40
 """
 
 
@@ -42,12 +44,13 @@ class BackfillTests(unittest.TestCase):
         self.assertEqual(extrema(list(range(23))), ("", ""))
         self.assertEqual(extrema([1] * 23 + [None]), ("", ""))
 
-    def test_mos_uses_previous_day_12z_run(self):
+    def test_mos_uses_previous_day_00z_and_12z_runs(self):
         with patch.object(backfill_history, "get_text", return_value=MOS_CSV):
             rows = mos_rows(NYC, date(2024, 3, 1), date(2024, 3, 1))
-        # The 00Z run's 10.0 must be ignored; only the 12Z run on D-1 counts.
+        # Only runs on D-1 count; the same-day 00Z run's 10.0 must be ignored.
         self.assertEqual(rows, [{"station_id": "nyc_central_park", "date": "2024-03-01",
-                                 "mos_high_f": 44.0, "mos_low_f": 29.0}])
+                                 "mos_high_f": 44.0, "mos_low_f": 29.0,
+                                 "mos00_high_f": 45.0, "mos00_low_f": 31.0}])
 
     def test_open_meteo_uses_local_standard_day(self):
         # NYC standard day 2024-07-01 is 05:00Z to 05:00Z, even during DST.

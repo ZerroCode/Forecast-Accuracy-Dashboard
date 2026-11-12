@@ -35,8 +35,12 @@ OPEN_METEO_URL = "https://previous-runs-api.open-meteo.com/v1/forecast"
 # from GFS to HRRR in 2024, which would mix two forecasters under one column.
 OPEN_METEO_MODELS = {"gfs_global": "gfs", "ncep_hrrr_conus": "hrrr", "icon_global": "icon",
                      "gem_global": "gem", "ecmwf_ifs025": "ecmwf"}
-# previous_day1: each hour forecast ~24h ahead; previous_day2: ~48h ahead.
-OPEN_METEO_LEADS = ("previous_day1", "previous_day2")
+# previous_dayN: each hour forecast from a run ~N days earlier. day2 is the latest
+# lead fully available when Kalshi opens the day before; day3 measures forecast change.
+OPEN_METEO_LEADS = ("previous_day1", "previous_day2", "previous_day3")
+# NWS MOS runs on D-1, by column prefix. The 12Z run is published around 16:00 UTC,
+# after Kalshi opens; the 00Z run is published around 05:00 UTC, before it.
+MOS_RUNS = {"mos": "12:00:00", "mos00": "00:00:00"}
 MOS_URL = "https://mesonet.agron.iastate.edu/cgi-bin/request/mos.py"
 NCEI_URL = "https://www.ncei.noaa.gov/access/services/data/v1"
 
@@ -109,23 +113,23 @@ def open_meteo_rows(station: Station, start: date, end: date) -> list[dict]:
 
 
 def mos_rows(station: Station, start: date, end: date) -> list[dict]:
-    # 12Z run on D-1: n_x at D 12Z is the overnight low, at D+1 00Z the daytime high.
+    # For each run on D-1: n_x at D 12Z is the overnight low, at D+1 00Z the daytime high.
     query = urlencode({
         "station": station.nws_station_id, "model": "GFS",
-        "sts": f"{start - timedelta(days=1)}T12:00Z", "ets": f"{end}T00:00Z", "format": "csv",
+        "sts": f"{start - timedelta(days=1)}T00:00Z", "ets": f"{end}T00:00Z", "format": "csv",
     })
     by_key = {}
     for record in csv.DictReader(io.StringIO(get_text(f"{MOS_URL}?{query}", timeout_seconds=180))):
-        if record["runtime"].endswith("12:00:00") and record["n_x"]:
-            by_key[(record["runtime"][:10], record["ftime"])] = float(record["n_x"])
+        if record["n_x"]:
+            by_key[(record["runtime"], record["ftime"])] = float(record["n_x"])
     rows = []
     for target in days(start, end):
-        run = (target - timedelta(days=1)).isoformat()
-        rows.append({
-            "station_id": station.station_id, "date": target.isoformat(),
-            "mos_high_f": by_key.get((run, f"{target + timedelta(days=1)} 00:00:00"), ""),
-            "mos_low_f": by_key.get((run, f"{target} 12:00:00"), ""),
-        })
+        row = {"station_id": station.station_id, "date": target.isoformat()}
+        for prefix, run_time in MOS_RUNS.items():
+            run = f"{target - timedelta(days=1)} {run_time}"
+            row[f"{prefix}_high_f"] = by_key.get((run, f"{target + timedelta(days=1)} 00:00:00"), "")
+            row[f"{prefix}_low_f"] = by_key.get((run, f"{target} 12:00:00"), "")
+        rows.append(row)
     return rows
 
 
@@ -145,7 +149,7 @@ SOURCE_FIELDS = {
     "open_meteo": ["station_id", "date"] + [
         f"{short}_{lead.replace('previous_', '')}_{metric}_f"
         for short in OPEN_METEO_MODELS.values() for lead in OPEN_METEO_LEADS for metric in ("high", "low")],
-    "mos": ["station_id", "date", "mos_high_f", "mos_low_f"],
+    "mos": ["station_id", "date"] + [f"{prefix}_{metric}_f" for prefix in MOS_RUNS for metric in ("high", "low")],
     "ncei": ["station_id", "date", "obs_high_f", "obs_low_f"],
 }
 SOURCE_FETCH = {"open_meteo": open_meteo_rows, "mos": mos_rows, "ncei": ncei_rows}

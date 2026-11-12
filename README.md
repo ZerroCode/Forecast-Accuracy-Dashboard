@@ -212,13 +212,23 @@ learning and evaluates the result:
 | `markets.py` | Bracket probabilities from forecasts; scoring against Kalshi prices, paper trading, market/model blend |
 | `plots.py` | Report figures |
 
-Features only use information available before the target day; a test enforces it.
-Kalshi prices are downloaded separately, at the start of each measured day:
+Every result is computed at two prediction cutoffs, each using only what was
+published by then:
+
+| Cutoff | Moment | Forecasts used | Kalshi price at |
+| --- | --- | --- | --- |
+| `open` (main) | 11 AM ET the day before | NWS MOS 00Z run; GFS, ICON, GEM, ECMWF ~48h ahead | Same moment |
+| `midnight` | Start of the measured day | NWS MOS 12Z run; all five models ~24h ahead, incl. HRRR | Same moment |
+
+Observed temperatures enter features only through two days before the target day,
+because the previous day's official report is published after both cutoffs. Every
+method is scored on the same station-days. Tests enforce both rules.
 
 ```shell
 python -m pip install pandas numpy scikit-learn matplotlib
-python src/backfill_prices.py --series KXHIGHNY KXHIGHCHI --start 2026-01-01
-python src/evaluate_models.py   # writes outputs/metrics.json and outputs/figures/
+python src/backfill_prices.py --cutoff open --series KXHIGHNY KXHIGHCHI --start 2026-01-01
+python src/backfill_prices.py --cutoff midnight --series KXHIGHNY KXHIGHCHI --start 2026-01-01
+python src/evaluate_models.py   # writes outputs/<cutoff>/metrics.json and figures/
 ```
 
 `outputs/` is generated and not committed; re-run the script to recreate it.

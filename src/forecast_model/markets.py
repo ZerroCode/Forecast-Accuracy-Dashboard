@@ -26,10 +26,10 @@ def bracket_prob(strike_type: str, floor: float, cap: float, mu: float, sigma: f
     return float("nan")
 
 
-def load_priced_markets(history: Path) -> pd.DataFrame:
+def load_priced_markets(history: Path, prices_dir: str) -> pd.DataFrame:
     """Settled brackets that have a price snapshot, with a normalized market probability."""
     frames = []
-    for prices_path in sorted((history / "kalshi_prices").glob("*.csv")):
+    for prices_path in sorted((history / prices_dir).glob("*.csv")):
         markets = pd.read_csv(history / "kalshi" / prices_path.name)
         prices = pd.read_csv(prices_path)[["market_ticker", "yes_bid", "yes_ask"]]
         frames.append(markets.merge(prices, on="market_ticker"))
