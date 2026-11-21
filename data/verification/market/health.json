@@ -17,7 +17,7 @@
     ]
   },
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-21T01:28:10Z",
+  "generated_at_utc": "2026-11-21T09:40:56Z",
   "lookback_days": 30,
   "runs": [
     {
@@ -6047,6 +6047,29 @@
       "workflow_created_at_utc": "2026-11-21T01:27:30Z",
       "workflow_started_at_utc": "2026-11-21T01:27:30Z",
       "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/44850284619"
+    },
+    {
+      "collector_finished_at_utc": "2026-11-21T09:40:55.485580Z",
+      "collector_seconds": 11.811,
+      "collector_started_at_utc": "2026-11-21T09:40:43.674793Z",
+      "creation_to_job_seconds": 3.0,
+      "discovery_seconds": 11.742,
+      "failure_count": 0,
+      "github_run_attempt": "1",
+      "github_run_id": "44890695968",
+      "job_started_at_utc": "2026-11-21T09:40:38Z",
+      "job_to_collector_seconds": 5.675,
+      "kind": "market",
+      "requests": [],
+      "runner_ready_at_utc": "2026-11-21T09:40:39Z",
+      "setup_seconds": 4.675,
+      "status": "completed",
+      "timing_status": "available",
+      "trigger": "schedule",
+      "trigger_schedule": "7 * * * *",
+      "workflow_created_at_utc": "2026-11-21T09:40:35Z",
+      "workflow_started_at_utc": "2026-11-21T09:40:35Z",
+      "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/44890695968"
     }
   ],
   "schema_version": 1,
@@ -6370,8 +6393,8 @@
       "delay_seconds": 30486.094957,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -6702,8 +6725,8 @@
       "delay_seconds": 30484.869033,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -7044,8 +7067,8 @@
       "delay_seconds": 30485.489802,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -7398,8 +7421,8 @@
       "delay_seconds": 30484.568638,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -7742,8 +7765,8 @@
       "delay_seconds": 30485.198649,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -8086,8 +8109,8 @@
       "delay_seconds": 30484.274466,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -8430,8 +8453,8 @@
       "delay_seconds": 30486.387258,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -8774,8 +8797,8 @@
       "delay_seconds": 30485.805239,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -9130,8 +9153,8 @@
       "delay_seconds": 30483.895574,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -9470,8 +9493,8 @@
       "delay_seconds": 30483.799243,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -9830,8 +9853,8 @@
       "delay_seconds": 30483.846683,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -10199,8 +10222,8 @@
       "delay_seconds": 30483.77414,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -10551,8 +10574,8 @@
       "delay_seconds": 30483.823125,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -10900,8 +10923,8 @@
       "delay_seconds": 30483.749086,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -11256,8 +11279,8 @@
       "delay_seconds": 30483.91882,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -11612,8 +11635,8 @@
       "delay_seconds": 30483.87086,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -11966,8 +11989,8 @@
       "delay_seconds": 30486.667117,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -12306,8 +12329,8 @@
       "delay_seconds": 30486.510305,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -12666,8 +12689,8 @@
       "delay_seconds": 30486.587381,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -13040,8 +13063,8 @@
       "delay_seconds": 30486.471796,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -13394,8 +13417,8 @@
       "delay_seconds": 30486.544652,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -13748,8 +13771,8 @@
       "delay_seconds": 30486.433536,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -14102,8 +14125,8 @@
       "delay_seconds": 30486.70481,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -14456,8 +14479,8 @@
       "delay_seconds": 30486.624584,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -14596,8 +14619,8 @@
       "delay_seconds": 30489.832248,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -14736,8 +14759,8 @@
       "delay_seconds": 30487.559628,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -14876,8 +14899,8 @@
       "delay_seconds": 30488.996902,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -15016,8 +15039,8 @@
       "delay_seconds": 30487.397855,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -15156,8 +15179,8 @@
       "delay_seconds": 30488.420722,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -15296,8 +15319,8 @@
       "delay_seconds": 30487.131414,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -15436,8 +15459,8 @@
       "delay_seconds": 30490.218736,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -15576,8 +15599,8 @@
       "delay_seconds": 30489.447039,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -17988,8 +18011,8 @@
       "delay_seconds": 30491.689723,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18128,8 +18151,8 @@
       "delay_seconds": 30490.8876,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18268,8 +18291,8 @@
       "delay_seconds": 30491.28464,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18408,8 +18431,8 @@
       "delay_seconds": 30490.689478,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18548,8 +18571,8 @@
       "delay_seconds": 30491.088273,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18688,8 +18711,8 @@
       "delay_seconds": 30490.484485,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18828,8 +18851,8 @@
       "delay_seconds": 30491.882219,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -18968,8 +18991,8 @@
       "delay_seconds": 30491.480007,
       "kind": "daily",
       "outcomes": {
-        "high": "measurement_pending",
-        "low": "measurement_pending"
+        "high": "awaiting_outcome",
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -22082,7 +22105,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -22098,7 +22121,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -22954,7 +22977,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -22970,7 +22993,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -23826,7 +23849,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -23842,7 +23865,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -24698,7 +24721,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -24714,7 +24737,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -25570,7 +25593,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -25586,7 +25609,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -26442,7 +26465,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -26458,7 +26481,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -27314,7 +27337,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -27330,7 +27353,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -28186,7 +28209,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -28202,7 +28225,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "nws",
       "quality": "complete",
@@ -29058,7 +29081,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -29074,7 +29097,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -29930,7 +29953,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -29946,7 +29969,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -30802,7 +30825,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -30818,7 +30841,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -31674,7 +31697,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -31690,7 +31713,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -32546,7 +32569,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -32562,7 +32585,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -33418,7 +33441,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -33434,7 +33457,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -34290,7 +34313,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -34306,7 +34329,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -35162,7 +35185,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -35178,7 +35201,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -36034,7 +36057,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -36050,7 +36073,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -36906,7 +36929,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -36922,7 +36945,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -37778,7 +37801,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -37794,7 +37817,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -38650,7 +38673,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -38666,7 +38689,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -39522,7 +39545,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -39538,7 +39561,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -40394,7 +40417,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -40410,7 +40433,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -41266,7 +41289,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -41282,7 +41305,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -42138,7 +42161,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -42154,7 +42177,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -42530,7 +42553,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -42546,7 +42569,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -42922,7 +42945,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -42938,7 +42961,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -43314,7 +43337,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -43330,7 +43353,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -43720,7 +43743,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -43736,7 +43759,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44112,7 +44135,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44128,7 +44151,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44504,7 +44527,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44520,7 +44543,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44910,7 +44933,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -44926,7 +44949,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -45316,7 +45339,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -45332,7 +45355,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -51804,7 +51827,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -51820,7 +51843,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -52196,7 +52219,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -52212,7 +52235,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -52588,7 +52611,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -52604,7 +52627,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -52994,7 +53017,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -53010,7 +53033,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -53386,7 +53409,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -53402,7 +53425,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -53778,7 +53801,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -53794,7 +53817,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -54184,7 +54207,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -54200,7 +54223,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -54590,7 +54613,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "high": "measurement_pending"
+        "high": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -54606,7 +54629,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-19T15:00:00Z",
       "outcomes": {
-        "low": "measurement_pending"
+        "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -54661,7 +54684,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.237335Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54683,7 +54707,8 @@
       "latest_capture_utc": "2026-11-20T20:29:09.177036Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54721,7 +54746,8 @@
       "latest_capture_utc": "2026-11-20T20:29:09.791436Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54760,7 +54786,8 @@
       "latest_capture_utc": "2026-11-20T20:29:08.878400Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54783,7 +54810,8 @@
       "latest_capture_utc": "2026-11-20T20:29:09.484789Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54806,7 +54834,8 @@
       "latest_capture_utc": "2026-11-20T20:29:08.613866Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54829,7 +54858,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.418092Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54852,7 +54882,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.045270Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "nws",
@@ -54875,7 +54906,8 @@
       "latest_capture_utc": "2026-11-20T20:29:07.976797Z",
       "median_delay_seconds": 26075.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -54898,7 +54930,8 @@
       "latest_capture_utc": "2026-11-20T20:29:04.525968Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -54937,7 +54970,8 @@
       "latest_capture_utc": "2026-11-20T20:29:07.703684Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -54977,7 +55011,8 @@
       "latest_capture_utc": "2026-11-20T20:29:04.346777Z",
       "median_delay_seconds": 25945.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 4
       },
       "provider": "open_meteo",
@@ -55001,7 +55036,8 @@
       "latest_capture_utc": "2026-11-20T20:29:04.701099Z",
       "median_delay_seconds": 25945.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -55025,7 +55061,8 @@
       "latest_capture_utc": "2026-11-20T20:29:04.172014Z",
       "median_delay_seconds": 25945.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 4
       },
       "provider": "open_meteo",
@@ -55048,7 +55085,8 @@
       "latest_capture_utc": "2026-11-20T20:29:08.304300Z",
       "median_delay_seconds": 26075.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -55071,7 +55109,8 @@
       "latest_capture_utc": "2026-11-20T20:29:07.840432Z",
       "median_delay_seconds": 26075.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "open_meteo",
@@ -55094,7 +55133,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.395949Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55118,7 +55158,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.896965Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55157,7 +55198,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.113635Z",
       "median_delay_seconds": 26451.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55196,7 +55238,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.735158Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55220,7 +55263,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.005983Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55244,7 +55288,8 @@
       "latest_capture_utc": "2026-11-20T20:29:10.615901Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55268,7 +55313,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.571875Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55292,7 +55338,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.269526Z",
       "median_delay_seconds": 26205.0,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "openweathermap",
@@ -55315,7 +55362,8 @@
       "latest_capture_utc": "2026-11-20T20:29:12.886633Z",
       "median_delay_seconds": 28741.9433165,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55337,7 +55385,8 @@
       "latest_capture_utc": "2026-11-20T20:29:12.124806Z",
       "median_delay_seconds": 28741.562403,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55359,7 +55408,8 @@
       "latest_capture_utc": "2026-11-20T20:29:12.462545Z",
       "median_delay_seconds": 28741.7312725,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55381,7 +55431,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.936562Z",
       "median_delay_seconds": 28741.468281,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55403,7 +55454,8 @@
       "latest_capture_utc": "2026-11-20T20:29:12.304772Z",
       "median_delay_seconds": 28741.652386,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55425,7 +55477,8 @@
       "latest_capture_utc": "2026-11-20T20:29:11.785907Z",
       "median_delay_seconds": 28741.3929535,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55447,7 +55500,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.101972Z",
       "median_delay_seconds": 28742.050986000002,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55469,7 +55523,8 @@
       "latest_capture_utc": "2026-11-20T20:29:12.651382Z",
       "median_delay_seconds": 28741.825691,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "pirate_weather",
@@ -55659,7 +55714,8 @@
       "latest_capture_utc": "2026-11-20T20:29:14.248937Z",
       "median_delay_seconds": 28742.6244685,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55681,7 +55737,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.647533Z",
       "median_delay_seconds": 28742.323766499998,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55703,7 +55760,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.939201Z",
       "median_delay_seconds": 28742.4696005,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55725,7 +55783,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.498644Z",
       "median_delay_seconds": 28742.249322,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55747,7 +55806,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.772526Z",
       "median_delay_seconds": 28742.386263,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55769,7 +55829,8 @@
       "latest_capture_utc": "2026-11-20T20:29:13.325832Z",
       "median_delay_seconds": 28742.162916,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55791,7 +55852,8 @@
       "latest_capture_utc": "2026-11-20T20:29:14.387153Z",
       "median_delay_seconds": 28742.6935765,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -55813,7 +55875,8 @@
       "latest_capture_utc": "2026-11-20T20:29:14.112748Z",
       "median_delay_seconds": 28742.556374,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 6
       },
       "provider": "visual_crossing",
@@ -56005,7 +56068,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.008552Z",
       "median_delay_seconds": 16460.004997,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56028,7 +56092,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.364351Z",
       "median_delay_seconds": 16460.600067,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56051,7 +56116,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.635557Z",
       "median_delay_seconds": 16461.05583,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56074,7 +56140,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.930761Z",
       "median_delay_seconds": 16461.846273,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56097,7 +56164,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.214242Z",
       "median_delay_seconds": 16462.338013,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56120,7 +56188,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.494863Z",
       "median_delay_seconds": 16462.781703,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56143,7 +56212,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.773174Z",
       "median_delay_seconds": 16463.59478,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56166,7 +56236,8 @@
       "latest_capture_utc": "2026-11-20T20:04:37.054001Z",
       "median_delay_seconds": 16464.044972,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "nws",
@@ -56189,7 +56260,8 @@
       "latest_capture_utc": "2026-11-20T21:36:25.812178Z",
       "median_delay_seconds": 17344.573792,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56212,7 +56284,8 @@
       "latest_capture_utc": "2026-11-20T21:36:25.920280Z",
       "median_delay_seconds": 17346.04782,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56235,7 +56308,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.024418Z",
       "median_delay_seconds": 16460.871144,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56258,7 +56332,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.203917Z",
       "median_delay_seconds": 16461.625227,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56281,7 +56356,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.461562Z",
       "median_delay_seconds": 16462.125346,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56304,7 +56380,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.644079Z",
       "median_delay_seconds": 16462.640222,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56327,7 +56404,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.750778Z",
       "median_delay_seconds": 16463.40654,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56350,7 +56428,8 @@
       "latest_capture_utc": "2026-11-20T21:36:26.859010Z",
       "median_delay_seconds": 16463.895972,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "open_meteo",
@@ -56373,7 +56452,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.047561Z",
       "median_delay_seconds": 16460.124043,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56396,7 +56476,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.401386Z",
       "median_delay_seconds": 16460.655262,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56419,7 +56500,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.677183Z",
       "median_delay_seconds": 16461.107662,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56442,7 +56524,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.979101Z",
       "median_delay_seconds": 16461.88978,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56465,7 +56548,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.250087Z",
       "median_delay_seconds": 16462.393007,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56488,7 +56572,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.531993Z",
       "median_delay_seconds": 16462.835304,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56511,7 +56596,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.811934Z",
       "median_delay_seconds": 16463.654501,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56534,7 +56620,8 @@
       "latest_capture_utc": "2026-11-20T20:04:37.093941Z",
       "median_delay_seconds": 16464.122877,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 46
       },
       "provider": "openweathermap",
@@ -56557,7 +56644,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.147566Z",
       "median_delay_seconds": 19875.966109,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "pirate_weather",
@@ -56579,7 +56667,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.474613Z",
       "median_delay_seconds": 19877.2627795,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "pirate_weather",
@@ -56601,7 +56690,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.754636Z",
       "median_delay_seconds": 19878.252957,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "pirate_weather",
@@ -56623,7 +56713,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.052061Z",
       "median_delay_seconds": 21482.333656,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "pirate_weather",
@@ -56646,7 +56737,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.321499Z",
       "median_delay_seconds": 19889.221711500002,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "pirate_weather",
@@ -56669,7 +56761,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.607093Z",
       "median_delay_seconds": 19890.077055499998,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "pirate_weather",
@@ -56691,7 +56784,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.883695Z",
       "median_delay_seconds": 21505.252407,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "pirate_weather",
@@ -56713,7 +56807,8 @@
       "latest_capture_utc": "2026-11-20T20:04:37.169838Z",
       "median_delay_seconds": 21506.958365,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "pirate_weather",
@@ -56912,7 +57007,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.234640Z",
       "median_delay_seconds": 19876.155388,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "visual_crossing",
@@ -56934,7 +57030,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.515449Z",
       "median_delay_seconds": 19877.3632855,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "visual_crossing",
@@ -56956,7 +57053,8 @@
       "latest_capture_utc": "2026-11-20T20:04:35.801170Z",
       "median_delay_seconds": 19878.36144,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "visual_crossing",
@@ -56978,7 +57076,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.088934Z",
       "median_delay_seconds": 21482.467325,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "visual_crossing",
@@ -57001,7 +57100,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.369646Z",
       "median_delay_seconds": 19889.345631,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "visual_crossing",
@@ -57024,7 +57124,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.638797Z",
       "median_delay_seconds": 19890.214275,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 16
       },
       "provider": "visual_crossing",
@@ -57046,7 +57147,8 @@
       "latest_capture_utc": "2026-11-20T20:04:36.913502Z",
       "median_delay_seconds": 21505.491707,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "visual_crossing",
@@ -57068,7 +57170,8 @@
       "latest_capture_utc": "2026-11-20T20:04:37.196814Z",
       "median_delay_seconds": 21507.210621,
       "outcome_statuses": {
-        "measurement_pending": 4,
+        "awaiting_outcome": 2,
+        "measurement_pending": 2,
         "ready": 18
       },
       "provider": "visual_crossing",
