@@ -17,7 +17,7 @@
     ]
   },
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-21T20:23:01Z",
+  "generated_at_utc": "2026-11-21T23:08:13Z",
   "lookback_days": 30,
   "runs": [
     {
@@ -7101,6 +7101,29 @@
       "workflow_created_at_utc": "2026-11-21T20:17:26Z",
       "workflow_started_at_utc": "2026-11-21T20:17:26Z",
       "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/44945484025"
+    },
+    {
+      "collector_finished_at_utc": "2026-11-21T23:08:12.027908Z",
+      "collector_seconds": 13.607,
+      "collector_started_at_utc": "2026-11-21T23:07:58.421107Z",
+      "creation_to_job_seconds": 3.0,
+      "discovery_seconds": 13.49,
+      "failure_count": 0,
+      "github_run_attempt": "1",
+      "github_run_id": "44960238993",
+      "job_started_at_utc": "2026-11-21T23:07:48Z",
+      "job_to_collector_seconds": 10.421,
+      "kind": "market",
+      "requests": [],
+      "runner_ready_at_utc": "2026-11-21T23:07:49Z",
+      "setup_seconds": 9.421,
+      "status": "completed",
+      "timing_status": "available",
+      "trigger": "schedule",
+      "trigger_schedule": "7 * * * *",
+      "workflow_created_at_utc": "2026-11-21T23:07:45Z",
+      "workflow_started_at_utc": "2026-11-21T23:07:45Z",
+      "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/44960238993"
     }
   ],
   "schema_version": 1,
