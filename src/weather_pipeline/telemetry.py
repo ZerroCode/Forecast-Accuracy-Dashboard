@@ -20,7 +20,7 @@ def now_utc() -> datetime:
 
 def failure_reason(exc: Exception) -> str:
     if isinstance(exc, RequestError):
-        return {401: "authentication", 403: "access_denied", 429: "quota"}.get(exc.status_code, "request_failed")
+        return {401: "authentication", 402: "quota", 403: "access_denied", 429: "quota"}.get(exc.status_code, "request_failed")
     message = str(exc).lower()
     if "incomplete" in message:
         return "incomplete_window"

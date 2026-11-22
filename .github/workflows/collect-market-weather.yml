@@ -37,6 +37,9 @@ jobs:
         id: collect
         continue-on-error: true
         env:
+          METEOSOURCE_API_KEY: ${{ secrets.METEOSOURCE_API_KEY }}
+          METEOSOURCE_TIER: ${{ vars.METEOSOURCE_TIER }}
+          METEOSOURCE_ARCHIVAL_ALLOWED: ${{ vars.METEOSOURCE_ARCHIVAL_ALLOWED }}
           PIRATE_WEATHER_API_KEY: ${{ secrets.PIRATE_WEATHER_API_KEY }}
           DATA_ENCRYPTION_KEY: ${{ secrets.DATA_ENCRYPTION_KEY }}
           VISUALCROSSING_API_KEY: ${{ secrets.VISUALCROSSING_API_KEY }}

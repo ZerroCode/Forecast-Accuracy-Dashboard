@@ -22,7 +22,7 @@ The collection workflow writes deterministic, date-partitioned files here:
 
 - `forecasts/YYYY/MM/YYYY-MM-DD.jsonl` contains normalized next-day forecasts.
 - `forecasts/YYYY/MM/YYYY-MM-DD.jsonl.<provider>.enc` contains encrypted next-day
-  forecasts with the same normalized schema, separately for `openweathermap`,
+  forecasts with the same normalized schema, separately for enabled `meteosource`, `openweathermap`,
   `pirate_weather`, and `visual_crossing`.
 - `observations/YYYY/MM/YYYY-MM-DD.jsonl` contains NOAA/NCEI daily outcomes.
 - `markets/YYYY/MM/YYYY-MM-DD.jsonl` contains contract rules and source metadata,

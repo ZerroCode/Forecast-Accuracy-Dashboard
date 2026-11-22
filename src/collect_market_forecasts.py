@@ -131,7 +131,7 @@ def collect_events(
                                              "market_open_time_utc": utc_text(event.opens)}, started, clock(), exc)
                         cache[cache_key] = (None, failure_reason(exc))
                         failures.append(f"{event.ticker}/{provider.slug}: {failure_reason(exc)}")
-                        if isinstance(exc, RequestError) and exc.status_code in {401, 403, 429}:
+                        if isinstance(exc, RequestError) and exc.status_code in {401, 402, 403, 429}:
                             stopped_providers.add(provider.slug)
                 record, error = cache[cache_key]
                 if error:

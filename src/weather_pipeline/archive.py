@@ -7,8 +7,8 @@ from pathlib import Path
 from weather_pipeline.encryption import MAGIC, MAGIC_V2
 from weather_pipeline.storage import read_jsonl
 
-PROTECTED_PROVIDERS = frozenset({"openweathermap", "pirate_weather", "visual_crossing", "weatherbit", "tomorrow_io"})
-MIGRATION_PROVIDERS = frozenset({"openweathermap", "pirate_weather", "visual_crossing"})
+PROTECTED_PROVIDERS = frozenset({"meteosource", "openweathermap", "pirate_weather", "visual_crossing", "weatherbit", "tomorrow_io"})
+MIGRATION_PROVIDERS = frozenset({"meteosource", "openweathermap", "pirate_weather", "visual_crossing"})
 
 
 class ArchiveKeyUnavailable(ValueError):

@@ -52,6 +52,7 @@ Open-Meteo, NWS, NOAA/NCEI, and Kalshi's public market API need no keys.
 | NOAA/NCEI | Observed daily highs/lows | Enabled by default |
 | Kalshi | Opening times, rules, thresholds, sources, and available result fields | Enabled in the market workflow |
 | OpenWeather | Three-hour forecasts; encrypted storage | Secret: `OPENWEATHERMAP_API_KEY` |
+| [Meteosource](https://www.meteosource.com/) | Next-day highs/lows; full hourly market windows on eligible paid tiers | Secret: `METEOSOURCE_API_KEY`; variable: `METEOSOURCE_ARCHIVAL_ALLOWED=true` |
 | Pirate Weather | Live hourly forecasts in both workflows; encrypted storage | Secret: `PIRATE_WEATHER_API_KEY` |
 | Visual Crossing | Live hourly forecasts in both workflows; encrypted storage | Secret: `VISUALCROSSING_API_KEY` |
 | Tomorrow.io | Hourly forecasts | Secret: `TOMORROW_API_KEYS`; variable: `TOMORROW_ARCHIVAL_ALLOWED=true` |
@@ -76,8 +77,18 @@ outcomes are refreshed for corrections within the last 14 days. Gaps and unrelat
 station-dates are not filled. Add historical data only when its issue time, station,
 and reporting window make it usable for this project's accuracy evaluation.
 
+Meteosource uses the live [Point endpoint](https://www.meteosource.com/documentation).
+The default `free` tier supplies tomorrow’s local daily high and low. Its one-day
+hourly horizon is too short for regular market-opening captures, so it is omitted
+from that roster. On a paid plan, set the Actions variable `METEOSOURCE_TIER` to
+the tier segment of your account’s Point URL. Market collection then requests UTC
+hours and requires every hour in the contract window. Set `METEOSOURCE_ARCHIVAL_ALLOWED=true`
+only after confirming your plan permits encrypted retention and public aggregate
+accuracy reporting. See the [API terms](https://www.meteosource.com/terms-of-service)
+and [plan coverage](https://www.meteosource.com/pricing). No historical endpoint is used.
+
 New protected archives use a dedicated, randomly generated `DATA_ENCRYPTION_KEY`.
-API keys authenticate requests; they no longer encrypt new files. OpenWeather,
+API keys authenticate requests; they no longer encrypt new files. Meteosource, OpenWeather,
 Pirate Weather, and Visual Crossing forecasts and optional raw responses are
 encrypted. Public-source observations, market metadata, and the existing historical
 training CSVs keep their current formats. Encryption does not grant retention,

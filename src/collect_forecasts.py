@@ -12,6 +12,7 @@ from zoneinfo import ZoneInfo
 from weather_pipeline.config import Station, load_stations
 from weather_pipeline.encryption import configured_key
 from weather_pipeline.http import RequestError
+from weather_pipeline.providers.meteosource import fetch_forecast as fetch_meteosource
 from weather_pipeline.providers.nws import fetch_forecast as fetch_nws
 from weather_pipeline.providers.open_meteo import fetch_forecast as fetch_open_meteo
 from weather_pipeline.providers.openweathermap import fetch_forecast as fetch_openweathermap
@@ -116,6 +117,20 @@ def configured_providers(
         )
     else:
         announce("OPENWEATHERMAP_API_KEY is not set; skipping OpenWeather")
+
+    meteosource_key = os.getenv("METEOSOURCE_API_KEY")
+    if meteosource_key:
+        tier = (os.getenv("METEOSOURCE_TIER") or "free").strip().lower()
+        if not _enabled(os.getenv("METEOSOURCE_ARCHIVAL_ALLOWED")):
+            announce("Meteosource archive disabled; confirm retention and scoring rights before enabling it.")
+        elif window is None or tier != "free":
+            providers.append(EnabledProvider(
+                slug="meteosource",
+                fetch=lambda station: fetch_meteosource(
+                    station, retrieved_at=retrieved_at, api_key=meteosource_key, tier=tier, window=window,
+                ),
+                archive_key=configured_key(),
+            ))
 
     pirate_key = os.getenv("PIRATE_WEATHER_API_KEY")
     if pirate_key:
@@ -292,7 +307,7 @@ def main() -> int:
                              "target_date_local": local_target}, started, clock(), exc)
                 audit(provider, station, "request_failed", reason=failure_reason(exc))
                 failures.append(f"{provider.slug}/{station.station_id}: {failure_reason(exc)}")
-                if isinstance(exc, RequestError) and exc.status_code in {401, 403, 429}:
+                if isinstance(exc, RequestError) and exc.status_code in {401, 402, 403, 429}:
                     print(f"Stopping {provider.slug}: authentication/access/quota error; see failure report.")
                     stopped = True
 

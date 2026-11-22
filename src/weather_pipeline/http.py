@@ -68,7 +68,14 @@ def _fetch(
         "Accept": accept,
         "User-Agent": os.getenv("WEATHER_USER_AGENT", DEFAULT_USER_AGENT),
     }
-    request_headers.update(headers or {})
+    # urllib forwards regular headers when it follows a redirect. Send provider
+    # credentials only to the host named in the original adapter request.
+    credentials = {}
+    for name, value in (headers or {}).items():
+        if name.lower() in {"x-api-key", "apikey", "authorization"}:
+            credentials[name] = value
+        else:
+            request_headers[name] = value
 
     status_code = None
     error_type = "unknown error"
@@ -77,6 +84,8 @@ def _fetch(
         status_code = None
         try:
             request = Request(url, headers=request_headers)
+            for name, value in credentials.items():
+                request.add_unredirected_header(name, value)
             with urlopen(request, timeout=timeout_seconds) as response:
                 return parse(response)
         except HTTPError as exc:

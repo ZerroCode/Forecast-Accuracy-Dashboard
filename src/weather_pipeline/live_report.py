@@ -282,6 +282,8 @@ def markdown_summary(health, accuracy):
              "| Measure | Status | Count |", "| --- | --- | ---: |"]
     for measure, counts in (("Collection", statuses), ("Timing", cohorts), ("Outcome", outcomes)):
         lines.extend(f"| {measure} | {status} | {count} |" for status, count in sorted(counts.items()))
+    if any("meteosource" in roster for roster in accuracy.get("comparison_rosters", {}).values()):
+        lines.extend(["", "Weather data by [Meteosource](https://www.meteosource.com/)."])
     if health["archive_problems"]:
         lines.extend(["", f"Archive problems: {len(health['archive_problems'])}; inspect health.json."])
     lines.extend(["", "Comparisons require identical station-days, outcome sources, capture cohort and arrivals within 10 minutes.",
