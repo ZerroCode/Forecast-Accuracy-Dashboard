@@ -87,6 +87,23 @@ class LiveReportsTests(unittest.TestCase):
         _, updated = self.report()
         self.assertNotEqual(accuracy, updated)
 
+    def test_near_open_milestone_counts_settled_station_days_for_full_roster(self):
+        rows = [forecast(day, provider, metric)
+                for day in range(10, 16) for provider in ("nws", "open_meteo")
+                for metric in ("high", "low")]
+        contracts = [contract(row) for row in rows]
+        contracts.append(contract(forecast(16)))  # Discovered high, no provider captures.
+        save_contracts(self.root, contracts)
+        for row in rows:
+            if row["provider"] == "nws" and row["temperature_metric"] == "low" and row["target_date_local"].endswith("15"):
+                row["retrieved_at_utc"] = "2026-11-14T16:00:00Z"
+        save_forecasts(self.root, rows)
+        coverage = self.report()[1]["near_open_coverage"]
+        self.assertEqual("reached", coverage["status"])
+        self.assertEqual(5, coverage["paired_dates"])
+        self.assertEqual({"expected_station_days": 7, "qualified_station_days": 6}, coverage["metrics"]["high"])
+        self.assertEqual({"expected_station_days": 6, "qualified_station_days": 5}, coverage["metrics"]["low"])
+
     def test_failures_and_unrun_days_remain_expected(self):
         row = forecast(kind="daily")
         save_forecasts(self.root, [row], kind="daily")
@@ -146,6 +163,7 @@ class LiveReportsTests(unittest.TestCase):
             health, accuracy = self.report()
         self.assertEqual("partial", health["status"])
         self.assertEqual(["visual_crossing"], accuracy["excluded_providers"])
+        self.assertEqual("unavailable", accuracy["near_open_coverage"]["status"])
         health, accuracy = self.report(key="wrong-key")
         self.assertEqual("archive_unreadable", health["archive_problems"][0]["reason"])
 

@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from collect_forecasts import EnabledProvider, configured_providers
-from collect_market_forecasts import collect_events, dated_path, save_contracts
+from collect_market_forecasts import collect_events, dated_path, pilot_wait_seconds, save_contracts
 from weather_pipeline.config import load_stations
 from weather_pipeline.http import RequestError
 from weather_pipeline.kalshi import (KalshiClient, MarketEvent, MarketMapping, discover,
@@ -63,6 +63,14 @@ class Clock:
 
 
 class WindowTests(unittest.TestCase):
+    def test_pilot_uses_eastern_opening_and_never_waits_for_tomorrow(self):
+        for month, hour in ((1, 14), (7, 13)):
+            start = datetime(2026, month, 20, hour, 55, tzinfo=timezone.utc)
+            self.assertEqual(900, pilot_wait_seconds(start))
+            self.assertEqual(0, pilot_wait_seconds(start - timedelta(hours=1)))
+            self.assertEqual(60, pilot_wait_seconds(start + timedelta(minutes=14)))
+            self.assertEqual(0, pilot_wait_seconds(start + timedelta(minutes=15)))
+
     def test_standard_day_is_24_hours_across_both_dst_transitions(self):
         for target in (date(2026, 3, 8), date(2026, 11, 1), date(2026, 10, 26)):
             with self.subTest(target=target):
@@ -230,6 +238,20 @@ class CaptureTests(unittest.TestCase):
 
     def rows(self):
         return read_jsonl(dated_path(self.root, "market_forecasts", "2026-10-26"))
+
+    def test_fresh_opening_precedes_late_recovery(self):
+        old = replace(self.event, ticker="older", opens=OPEN - timedelta(hours=1))
+        calls = []
+        def fetch(station):
+            calls.append(self.clock.value)
+            self.clock.value += timedelta(minutes=6)
+            return self.fetch.return_value
+        self.factory = lambda now, window: [EnabledProvider("test", fetch)]
+        self.collect([old, self.event])
+        saved = {r["event_ticker"]: r for r in self.rows()}
+        self.assertEqual(2, len(calls))
+        self.assertTrue(saved[self.event.ticker]["eligible_for_opening_comparison"])
+        self.assertFalse(saved["older"]["eligible_for_opening_comparison"])
 
     def test_before_open_makes_no_requests(self):
         self.clock.value = OPEN - timedelta(seconds=1)

@@ -41,7 +41,8 @@ Two GitHub Actions workflows share the same [station registry](config/stations.c
 | [Collect daily weather data](.github/workflows/collect-weather.yml) | Daily at 12:17 | Tomorrow's forecasts, outcomes for saved forecast targets, and verification reports |
 | [Collect Kalshi opening forecasts](.github/workflows/collect-market-weather.yml) | Hourly at :07, plus 13:57 and 14:57 | Contract metadata and the first available forecast after each market opens |
 
-The extra market runs poll for up to five minutes. Opening times come from
+The extra market runs poll for at least a five-minute window, and scheduled runs
+that start near 10 AM Eastern use the [opening pilot](#market-opening-pilot). Opening times come from
 Kalshi's API; the schedule provides opportunities to check them. GitHub may delay
 runs, so every snapshot records its actual response arrival time. Each collection
 also saves an expected provider/station list and request timings, even if a provider
@@ -217,9 +218,37 @@ request duration. They do not invent a scheduled trigger timestamp: a cron expre
 does not identify which delayed run GitHub eventually created. For example, market
 [run 43623868507](https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/43623868507)
 was created at 17:57 UTC on November 14, almost three hours after the 15:00 opening.
-Faster setup cannot recover that gap. A reliably scheduled worker is the next step
-if near-opening capture is required; GitHub schedules have
-[documented delays](https://docs.github.com/en/actions/how-tos/troubleshoot-workflows).
+### Market opening pilot
+
+A worker that starts between 9:53 AM and 10:10 AM New York time keeps polling the
+validated Kalshi markets through 10:10. Daylight saving changes are handled by
+`America/New_York`. Each event’s API opening time, active status and actual response
+arrival still determine eligibility. Outside that window a pilot dispatch runs a
+single recovery pass. Regular scheduled runs also use the pilot window when they
+arrive in time. The two special cron runs retain their five-minute minimum.
+
+To avoid depending on GitHub cron delivery for the pilot, schedule this command
+on an always-on host at **9:55 AM America/New_York** each day:
+
+```shell
+gh workflow run collect-market-weather.yml --repo ZerroCode/Forecast-Accuracy-Dashboard --ref main -f opening_pilot=true
+```
+
+The timer host needs authenticated GitHub CLI access to dispatch this repository’s
+workflow (Actions write). Provider secrets, the archive key and data commits stay
+in the normal Actions workflow. Dispatch is asynchronous and still depends on
+runner availability. Inspect `runs` in `health.json` for the actual collector
+start, pilot wait budget, discovery duration and response delays. A host running
+the collector directly can use `python src/collect_market_forecasts.py --opening-pilot`
+in an isolated checkout with its own credentials and data directory.
+
+The report’s **Market openings** section shows qualified versus expected station-days
+for each metric within the report lookback. Expected counts cover validated, discovered
+events whose openings have passed, including still-pending outcomes. Each station/date
+counts once per metric. Qualifying requires verified outcomes and comparable near-opening
+captures from the full current market roster. A date counts toward the five-date
+milestone when at least one station qualifies for both high and low on that date.
+Coverage is marked unavailable when archive problems prevent a full comparison.
 
 ## Run locally
 

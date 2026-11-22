@@ -153,7 +153,7 @@ class Outcomes:
         return ("ready", value, "noaa_ncei_daily_summaries") if value is not None else ("awaiting_outcome", None, None)
 
 
-def aggregate_scores(samples, rosters, *, excluded=()):
+def aggregate_scores(samples, rosters, *, excluded=(), near_open_cases=None):
     """All providers in each cohort use identical cases and arrivals within ten minutes.
 
     Individual predictions, outcomes and errors never leave this function. Suppress
@@ -188,6 +188,9 @@ def aggregate_scores(samples, rosters, *, excluded=()):
                 counts[group]["capture_time_mismatch_cases"] += 1
                 continue
             groups[group].append(selected)
+            if (near_open_cases is not None and location == "all" and cohort == "market_near_open"
+                    and len(roster) == len(rosters[kind])):
+                near_open_cases.add((station, selected[0]["target_date_local"], metric))
     result = []
     for group in sorted(counts):
         cohort, metric, station, source, roster = group

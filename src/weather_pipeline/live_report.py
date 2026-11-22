@@ -35,7 +35,7 @@ def timing_summary(run):
     """Separate creation/queue/setup/discovery/request delays without guessing a cron slot."""
     result = {key: run.get(key) for key in (
         "kind", "status", "failure_count", "github_run_id", "github_run_attempt", "workflow_url",
-        "trigger", "trigger_schedule", "timing_status", "workflow_created_at_utc",
+        "trigger", "trigger_schedule", "opening_pilot_wait_seconds", "timing_status", "workflow_created_at_utc",
         "workflow_started_at_utc", "job_started_at_utc", "runner_ready_at_utc",
         "collector_started_at_utc", "collector_finished_at_utc")}
     for name, start, end in (
@@ -57,6 +57,37 @@ def timing_summary(run):
         item["opening_to_response_seconds"] = seconds(opening, request.get("request_finished_at_utc"))
         result["requests"].append(item)
     return result
+
+
+def opening_coverage(contracts, cutoff, now, qualified, *, available):
+    """Count discovered station-days once per metric, including pending outcomes."""
+    events = defaultdict(list)
+    for row in contracts:
+        events[row["event_ticker"]].append(row)
+    expected = set()
+    for rows in events.values():
+        if any(r.get("validation_errors") != [] for r in rows):
+            continue
+        identities = {(r["station_id"], r["target_date_local"], r["temperature_metric"],
+                       parse_time(r["market_open_time_utc"])) for r in rows}
+        if len(identities) != 1:
+            continue
+        station, day, metric, opening = identities.pop()
+        if metric in {"high", "low"} and cutoff <= opening.date() and opening <= now:
+            expected.add((station, day, metric))
+    shared = qualified & expected
+    by_metric = {}
+    for metric in ("high", "low"):
+        by_metric[metric] = {
+            "expected_station_days": sum(m == metric for _, _, m in expected),
+            "qualified_station_days": sum(m == metric for _, _, m in shared) if available else None,
+        }
+    paired_dates = {day for station, day, metric in shared
+                    if metric == "high" and (station, day, "low") in shared}
+    return {"metrics": by_metric, "paired_dates": len(paired_dates) if available else None,
+            "required_dates": MIN_SCORE_DATES,
+            "status": ("unavailable" if not available else
+                       "reached" if len(paired_dates) >= MIN_SCORE_DATES else "collecting")}
 
 
 def build_reports(root: Path, stations, now: datetime, *, lookback_days=30, key=None):
@@ -255,13 +286,18 @@ def build_reports(root: Path, stations, now: datetime, *, lookback_days=30, key=
     # a consistent settlement. Encrypted-provider failures can be explicitly excluded.
     blocked = any(p.get("category") in {*KINDS.values(), "markets", "observations"} and
                   p.get("provider") not in PROTECTED_PROVIDERS for p in problems)
-    score_groups = [] if blocked else aggregate_scores(samples, rosters, excluded=excluded)
+    near_open_cases = set()
+    score_groups = [] if blocked else aggregate_scores(
+        samples, rosters, excluded=excluded, near_open_cases=near_open_cases)
+    coverage = opening_coverage(outcomes.latest.values(), cutoff, now, near_open_cases,
+                                available=not blocked and bool(rosters["market"])
+                                and not set(excluded).intersection(rosters["market"]))
     common = {"schema_version": 1, "generated_at_utc": utc_text(now), "lookback_days": lookback_days,
               "status": "partial" if problems else "complete", "archive_problems": problems,
               "comparison_rosters": rosters, "excluded_providers": excluded}
     health = {**common, "summary": summaries, "snapshots": details,
               "runs": [timing_summary(run) for run in kind_sorted(runs)]}
-    accuracy = {**common, "minimum_distinct_dates": MIN_SCORE_DATES,
+    accuracy = {**common, "near_open_coverage": coverage, "minimum_distinct_dates": MIN_SCORE_DATES,
                 "comparison_tolerance_seconds": 600, "positive_bias_means": "forecast_too_warm",
                 "ranking_status": "blocked_by_unreadable_archive" if blocked else (
                     "available" if any(g["status"] == "scored" for g in score_groups) else "insufficient_common_history"),
@@ -282,6 +318,16 @@ def markdown_summary(health, accuracy):
              "| Measure | Status | Count |", "| --- | --- | ---: |"]
     for measure, counts in (("Collection", statuses), ("Timing", cohorts), ("Outcome", outcomes)):
         lines.extend(f"| {measure} | {status} | {count} |" for status, count in sorted(counts.items()))
+    coverage = accuracy["near_open_coverage"]
+    lines.extend(["", "## Market openings", ""])
+    if coverage["status"] == "unavailable":
+        lines.append("Full-roster coverage is unavailable for this report.")
+    else:
+        for metric, counts in coverage["metrics"].items():
+            lines.append(f"- {metric.title()}: {counts['qualified_station_days']} of "
+                         f"{counts['expected_station_days']} discovered station-days qualified.")
+        lines.extend(["", f"Dates with a verified high and low at the same station: "
+                      f"{coverage['paired_dates']} (milestone: {coverage['required_dates']})."])
     if any("meteosource" in roster for roster in accuracy.get("comparison_rosters", {}).values()):
         lines.extend(["", "Weather data by [Meteosource](https://www.meteosource.com/)."])
     if health["archive_problems"]:

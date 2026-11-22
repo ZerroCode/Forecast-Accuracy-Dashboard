@@ -8,6 +8,12 @@ on:
     # is read from Kalshi; these are polling opportunities, not assumed openings.
     - cron: "57 13,14 * * *"
   workflow_dispatch:
+    inputs:
+      opening_pilot:
+        description: Keep the collector warm for the usual 10 AM Eastern market opening
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,7 +27,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 35
     steps:
       - name: Record runner readiness
         run: echo "RUNNER_READY_AT_UTC=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
@@ -46,12 +52,19 @@ jobs:
           OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
           TOMORROW_API_KEYS: ${{ secrets.TOMORROW_API_KEYS }}
           TOMORROW_ARCHIVAL_ALLOWED: ${{ vars.TOMORROW_ARCHIVAL_ALLOWED }}
+          OPENING_PILOT: ${{ inputs.opening_pilot }}
           TRIGGER_SCHEDULE: ${{ github.event.schedule }}
         shell: bash
         run: |
           args=()
-          if [[ "$TRIGGER_SCHEDULE" == "57 13,14 * * *" ]]; then
-            args+=(--wait-seconds 300)
+          if [[ "$OPENING_PILOT" == "true" ]]; then
+            args+=(--opening-pilot)
+          elif [[ -n "$TRIGGER_SCHEDULE" ]]; then
+            # If a scheduled runner happens to be ready near 10 ET, use it as well.
+            args+=(--opening-pilot)
+            if [[ "$TRIGGER_SCHEDULE" == "57 13,14 * * *" ]]; then
+              args+=(--wait-seconds 300)
+            fi
           fi
           python src/collect_market_forecasts.py "${args[@]}"
       - name: Attach workflow timing

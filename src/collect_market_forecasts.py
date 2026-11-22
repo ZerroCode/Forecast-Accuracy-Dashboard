@@ -7,10 +7,11 @@ from __future__ import annotations
 import argparse
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from functools import partial
 from pathlib import Path
 from typing import Callable
+from zoneinfo import ZoneInfo
 
 from collect_forecasts import configured_providers
 from weather_pipeline.config import load_stations
@@ -46,15 +47,23 @@ def save_contracts(root: Path, records: list[dict]) -> None:
 def collect_events(
     events: list[MarketEvent], root: Path, *, clock: Callable = now_utc,
     provider_factory: Callable = partial(configured_providers, quiet=True), near_open_seconds: int = 600,
-    run_log: RunLog | None = None,
+    run_log: RunLog | None = None, stopped_providers: set[str] | None = None,
 ) -> list[str]:
     failures = []
     # Per-run cache: matching high/low events reuse one weather request, but different
     # openings never share a response. Failed requests are also not multiplied by brackets.
     cache: dict[tuple, tuple[dict | None, str | None]] = {}
-    stopped_providers = set()
+    if stopped_providers is None:
+        stopped_providers = set()
     known: dict[Path, set[tuple]] = {}
-    for event in sorted(events, key=lambda item: (item.opens, item.mapping.station.station_id, item.ticker)):
+    poll_time = clock()
+
+    def capture_order(event):
+        # Fresh openings have a deadline. Attempt them before late recovery work.
+        age = (poll_time - event.opens).total_seconds()
+        return (not 0 <= age <= near_open_seconds, event.opens, event.mapping.station.station_id, event.ticker)
+
+    for event in sorted(events, key=capture_order):
         now = clock()
         if now < event.opens:
             continue
@@ -166,12 +175,24 @@ def collect_events(
     return failures
 
 
+def pilot_wait_seconds(now: datetime) -> float:
+    """Bound the warm window around 10 AM Eastern; API events still control capture."""
+    eastern = now.astimezone(ZoneInfo("America/New_York"))
+    opening = eastern.replace(hour=10, minute=0, second=0, microsecond=0)
+    finish = opening + timedelta(minutes=10)
+    if opening - timedelta(minutes=7) <= eastern < finish:
+        return (finish - eastern).total_seconds()
+    return 0
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stations", type=Path, default=PROJECT_ROOT / "config/stations.csv")
     parser.add_argument("--mappings", type=Path, default=PROJECT_ROOT / "config/kalshi_markets.json")
     parser.add_argument("--data-dir", type=Path, default=PROJECT_ROOT / "data")
     parser.add_argument("--discover-only", action="store_true", help="Save contracts without requesting forecasts")
+    parser.add_argument("--opening-pilot", action="store_true",
+                         help="Stay ready across the 09:53–10:10 Eastern opening window")
     parser.add_argument("--wait-seconds", type=int, default=0,
                         help="Recheck for new openings for up to this many seconds (maximum 300)")
     parser.add_argument("--near-open-seconds", type=int, default=600,
@@ -186,9 +207,13 @@ def main() -> int:
     args = parse_args()
     mappings = load_mappings(args.mappings, load_stations(args.stations))
     client = KalshiClient()
-    deadline = time.monotonic() + args.wait_seconds
+    wait_seconds = max(args.wait_seconds, pilot_wait_seconds(now_utc()) if args.opening_pilot else 0)
+    deadline = time.monotonic() + wait_seconds
+    stopped_providers = set()
     failures = []
     run = RunLog(args.data_dir, "market")
+    if args.opening_pilot:
+        run.data["opening_pilot_wait_seconds"] = round(wait_seconds)
     while True:
         discovery_started = now_utc()
         events, contracts, discovery_failures = discover(client, mappings, now_utc())
@@ -200,7 +225,7 @@ def main() -> int:
         failures.extend(discovery_failures)
         if not args.discover_only:
             failures.extend(collect_events(events, args.data_dir, near_open_seconds=args.near_open_seconds,
-                                           run_log=run))
+                                           run_log=run, stopped_providers=stopped_providers))
         print(f"Discovered {len(events)} validated events / {len(contracts)} contracts")
         remaining = deadline - time.monotonic()
         if args.discover_only or remaining <= 0:
