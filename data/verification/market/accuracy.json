@@ -18,7 +18,7 @@
   },
   "comparison_tolerance_seconds": 600,
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-22T20:35:12Z",
+  "generated_at_utc": "2026-11-22T21:44:26Z",
   "groups": [
     {
       "candidate_cases": 40,
@@ -3371,6 +3371,21 @@
   ],
   "lookback_days": 30,
   "minimum_distinct_dates": 5,
+  "near_open_coverage": {
+    "metrics": {
+      "high": {
+        "expected_station_days": 240,
+        "qualified_station_days": 0
+      },
+      "low": {
+        "expected_station_days": 240,
+        "qualified_station_days": 0
+      }
+    },
+    "paired_dates": 0,
+    "required_dates": 5,
+    "status": "collecting"
+  },
   "positive_bias_means": "forecast_too_warm",
   "ranking_status": "available",
   "schema_version": 1,

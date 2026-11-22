@@ -17,7 +17,7 @@
     ]
   },
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-22T20:35:12Z",
+  "generated_at_utc": "2026-11-22T21:44:26Z",
   "lookback_days": 30,
   "runs": [
     {
@@ -32,6 +32,7 @@
       "job_started_at_utc": "2026-11-15T19:29:35Z",
       "job_to_collector_seconds": 8.868,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-15T19:29:37Z",
       "setup_seconds": 6.868,
@@ -55,6 +56,7 @@
       "job_started_at_utc": "2026-11-15T22:45:24Z",
       "job_to_collector_seconds": 13.194,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-15T22:45:26Z",
       "setup_seconds": 11.194,
@@ -78,6 +80,7 @@
       "job_started_at_utc": "2026-11-16T02:42:03Z",
       "job_to_collector_seconds": 6.559,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-16T02:42:04Z",
       "setup_seconds": 5.559,
@@ -101,6 +104,7 @@
       "job_started_at_utc": "2026-11-16T11:01:40Z",
       "job_to_collector_seconds": 6.163,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-16T11:01:41Z",
       "setup_seconds": 5.163,
@@ -124,6 +128,7 @@
       "job_started_at_utc": "2026-11-16T20:57:50Z",
       "job_to_collector_seconds": 8.857,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV17",
@@ -772,6 +777,7 @@
       "job_started_at_utc": "2026-11-16T22:15:03Z",
       "job_to_collector_seconds": 9.309,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -1412,6 +1418,7 @@
       "job_started_at_utc": "2026-11-16T23:05:26Z",
       "job_to_collector_seconds": 19.582,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-16T23:05:30Z",
       "setup_seconds": 15.582,
@@ -1435,6 +1442,7 @@
       "job_started_at_utc": "2026-11-17T03:45:35Z",
       "job_to_collector_seconds": 17.209,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-17T03:45:38Z",
       "setup_seconds": 14.209,
@@ -1458,6 +1466,7 @@
       "job_started_at_utc": "2026-11-17T13:13:59Z",
       "job_to_collector_seconds": 11.813,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-17T13:14:01Z",
       "setup_seconds": 9.813,
@@ -1481,6 +1490,7 @@
       "job_started_at_utc": "2026-11-17T21:01:38Z",
       "job_to_collector_seconds": 8.321,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -2121,6 +2131,7 @@
       "job_started_at_utc": "2026-11-17T21:56:33Z",
       "job_to_collector_seconds": 8.766,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV18",
@@ -2769,6 +2780,7 @@
       "job_started_at_utc": "2026-11-17T22:15:14Z",
       "job_to_collector_seconds": 9.897,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-17T22:15:16Z",
       "setup_seconds": 7.897,
@@ -2792,6 +2804,7 @@
       "job_started_at_utc": "2026-11-18T04:13:54Z",
       "job_to_collector_seconds": 6.727,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-18T04:13:55Z",
       "setup_seconds": 5.727,
@@ -2815,6 +2828,7 @@
       "job_started_at_utc": "2026-11-18T13:53:08Z",
       "job_to_collector_seconds": 6.643,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-18T13:53:09Z",
       "setup_seconds": 5.643,
@@ -2838,6 +2852,7 @@
       "job_started_at_utc": "2026-11-18T20:38:55Z",
       "job_to_collector_seconds": 8.859,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -3302,6 +3317,7 @@
       "job_started_at_utc": "2026-11-18T21:39:07Z",
       "job_to_collector_seconds": 7.798,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV19",
@@ -3846,6 +3862,7 @@
       "job_started_at_utc": "2026-11-18T21:53:10Z",
       "job_to_collector_seconds": 7.368,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-18T21:53:12Z",
       "setup_seconds": 5.368,
@@ -3869,6 +3886,7 @@
       "job_started_at_utc": "2026-11-19T03:19:05Z",
       "job_to_collector_seconds": 16.461,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-19T03:19:08Z",
       "setup_seconds": 13.461,
@@ -3892,6 +3910,7 @@
       "job_started_at_utc": "2026-11-19T12:55:06Z",
       "job_to_collector_seconds": 6.937,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-19T12:55:07Z",
       "setup_seconds": 5.937,
@@ -3915,6 +3934,7 @@
       "job_started_at_utc": "2026-11-19T20:44:42Z",
       "job_to_collector_seconds": 21.715,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -4379,6 +4399,7 @@
       "job_started_at_utc": "2026-11-19T21:27:04Z",
       "job_to_collector_seconds": 12.719,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV20",
@@ -4923,6 +4944,7 @@
       "job_started_at_utc": "2026-11-19T21:53:49Z",
       "job_to_collector_seconds": 16.96,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-19T21:53:53Z",
       "setup_seconds": 12.96,
@@ -4946,6 +4968,7 @@
       "job_started_at_utc": "2026-11-20T03:05:31Z",
       "job_to_collector_seconds": 7.88,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-20T03:05:32Z",
       "setup_seconds": 6.88,
@@ -4969,6 +4992,7 @@
       "job_started_at_utc": "2026-11-20T11:32:15Z",
       "job_to_collector_seconds": 6.666,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-20T11:32:16Z",
       "setup_seconds": 5.666,
@@ -4992,6 +5016,7 @@
       "job_started_at_utc": "2026-11-20T20:04:07Z",
       "job_to_collector_seconds": 18.041,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV21",
@@ -5445,6 +5470,7 @@
       "job_started_at_utc": "2026-11-20T20:28:56Z",
       "job_to_collector_seconds": 7.979,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -5909,6 +5935,7 @@
       "job_started_at_utc": "2026-11-20T21:36:08Z",
       "job_to_collector_seconds": 7.55,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV21",
@@ -6037,6 +6064,7 @@
       "job_started_at_utc": "2026-11-21T01:27:33Z",
       "job_to_collector_seconds": 21.641,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-21T01:27:36Z",
       "setup_seconds": 18.641,
@@ -6060,6 +6088,7 @@
       "job_started_at_utc": "2026-11-21T09:40:38Z",
       "job_to_collector_seconds": 5.675,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-21T09:40:39Z",
       "setup_seconds": 4.675,
@@ -6083,6 +6112,7 @@
       "job_started_at_utc": "2026-11-21T17:24:59Z",
       "job_to_collector_seconds": 6.967,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV22",
@@ -6627,6 +6657,7 @@
       "job_started_at_utc": "2026-11-21T19:24:33Z",
       "job_to_collector_seconds": 7.241,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -7091,6 +7122,7 @@
       "job_started_at_utc": "2026-11-21T20:17:29Z",
       "job_to_collector_seconds": 20.834,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-21T20:17:32Z",
       "setup_seconds": 17.834,
@@ -7114,6 +7146,7 @@
       "job_started_at_utc": "2026-11-21T23:07:48Z",
       "job_to_collector_seconds": 10.421,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-21T23:07:49Z",
       "setup_seconds": 9.421,
@@ -7137,6 +7170,7 @@
       "job_started_at_utc": "2026-11-22T06:37:19Z",
       "job_to_collector_seconds": 6.892,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [],
       "runner_ready_at_utc": "2026-11-22T06:37:20Z",
       "setup_seconds": 5.892,
@@ -7160,6 +7194,7 @@
       "job_started_at_utc": "2026-11-22T15:14:19Z",
       "job_to_collector_seconds": 9.635,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV23",
@@ -7704,6 +7739,7 @@
       "job_started_at_utc": "2026-11-22T19:48:00Z",
       "job_to_collector_seconds": 10.535,
       "kind": "daily",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "opening_to_response_seconds": null,
@@ -8168,6 +8204,7 @@
       "job_started_at_utc": "2026-11-22T20:29:55Z",
       "job_to_collector_seconds": 11.344,
       "kind": "market",
+      "opening_pilot_wait_seconds": null,
       "requests": [
         {
           "event_ticker": "KXHIGHTBOS-26NOV23",
@@ -8205,6 +8242,30 @@
       "workflow_created_at_utc": "2026-11-22T20:29:53Z",
       "workflow_started_at_utc": "2026-11-22T20:29:53Z",
       "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/45066747687"
+    },
+    {
+      "collector_finished_at_utc": "2026-11-22T21:44:25.468642Z",
+      "collector_seconds": 9.93,
+      "collector_started_at_utc": "2026-11-22T21:44:15.538515Z",
+      "creation_to_job_seconds": 2.0,
+      "discovery_seconds": 9.853,
+      "failure_count": 0,
+      "github_run_attempt": "1",
+      "github_run_id": "45073732758",
+      "job_started_at_utc": "2026-11-22T21:44:00Z",
+      "job_to_collector_seconds": 15.539,
+      "kind": "market",
+      "opening_pilot_wait_seconds": 0,
+      "requests": [],
+      "runner_ready_at_utc": "2026-11-22T21:44:02Z",
+      "setup_seconds": 13.539,
+      "status": "completed",
+      "timing_status": "available",
+      "trigger": "schedule",
+      "trigger_schedule": "7 * * * *",
+      "workflow_created_at_utc": "2026-11-22T21:43:58Z",
+      "workflow_started_at_utc": "2026-11-22T21:43:58Z",
+      "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/45073732758"
     }
   ],
   "schema_version": 1,
