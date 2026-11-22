@@ -90,26 +90,64 @@ Attribution is included in every normalized record:
 
 [Visual Crossing's storage guidance](https://www.visualcrossing.com/resources/documentation/can-i-cache-and-store-visual-crossing-weather-data/)
 distinguishes application archives from public downloads. Encryption controls
-access but does not supply missing licensing permissions. OpenWeather, Pirate
-Weather, and Visual Crossing now use authenticated Fernet encryption with the
-dedicated `DATA_ENCRYPTION_KEY`, including temporary files. Public collection
-audits contain status/timing metadata, not temperatures.
+access. Each provider’s terms determine permitted uses. Pirate Weather uses public
+weather models with upstream data terms. Preserve attribution when sharing results.
 
-`FAD2` files begin with a format marker and a non-secret key identifier, followed by
-the authenticated ciphertext. The archive key must encode 32 cryptographically
-random bytes. `FAD1` is supported for reading legacy Visual Crossing files only;
-it uses a random salt and scrypt with the original API key. Migration decrypts
-these files in memory and writes `FAD2` using the dedicated key. Wrong keys or
-damaged ciphertext fail without replacing existing data.
+## Archive key setup and migration
 
-`src/migrate_archives.py` migrates only permitted live forecast and raw archives.
-It does not change historical training CSVs or rewrite Git history. Weatherbit and
-Tomorrow.io records are left unchanged for a separate cleanup. Keep their archival
-variables false. Backup keys remain necessary to read older encrypted revisions.
+Run these commands from the repository root. New protected files use authenticated
+Fernet encryption (`FAD2`) with a dedicated `DATA_ENCRYPTION_KEY`. For an existing
+archive, use its current key. For a new installation, generate a key once:
 
-`python src/export_private_forecasts.py --key-file .env` decrypts normalized snapshots under
-`data/private/<provider>/` using the local archive key and makes no network
-requests. Keep those files private. The scheduled workflows never decrypt to disk
-or upload plaintext artifacts. Pirate Weather is served from public weather models;
-its code license is not a statement about every upstream dataset's license. Preserve
-provider attribution and review applicable data terms before redistributing raw feeds.
+```shell
+python src/create_archive_key.py
+```
+
+The command creates an owner-only, gitignored `.env` containing a random 32-byte
+key encoded as URL-safe base64. It refuses to overwrite an existing file. Back
+up the key securely and copy its value to the Actions repository **secret**
+`DATA_ENCRYPTION_KEY`. Local commands read this file when passed `--key-file .env`.
+
+### Migrate older files
+
+```shell
+# Preview changes, then apply the verified migration.
+python src/migrate_archives.py --key-file .env
+python src/migrate_archives.py --key-file .env --apply
+```
+
+Legacy `FAD1` Visual Crossing files require the original `VISUALCROSSING_API_KEY`
+in the environment. To migrate a subset, add `--providers` followed by provider
+IDs, for example `--providers openweathermap pirate_weather`. The migration
+encrypts permitted forecast rows and raw responses, preserving original capture
+times. It verifies inputs and encrypted outputs before removing plaintext copies.
+If interrupted, rerun the command to finish. Weatherbit and Tomorrow.io records
+are excluded. Earlier Git revisions, forks and clones can still contain plaintext.
+
+Collection workflows run migration after capture. The dedicated
+[migration workflow](../.github/workflows/migrate-archives.yml) can also run
+manually or when changes to its workflow or migration code reach `main`.
+It migrates saved files and rebuilds reports without calling weather APIs.
+
+### Rotate the key
+
+Coordinate rotation with collection jobs so that writers and readers switch keys
+together. Keep a secure copy of the current key, generate a new key in a separate
+private file, then run:
+
+```shell
+python src/migrate_archives.py --key-file NEW_PRIVATE_FILE --previous-key-file OLD_PRIVATE_FILE --apply
+```
+
+Update the Actions secret to match the migrated archives. Keep old keys for Git
+revisions and backups that still use them.
+
+### Export private forecasts
+
+```shell
+python src/export_private_forecasts.py --key-file .env
+```
+
+The exporter writes decrypted JSONL to the gitignored `data/private/<provider>/`
+directory, preserving the daily and market datasets. Keep those files private.
+For ordinary scoring, the reporting command decrypts forecasts in memory.

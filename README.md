@@ -1,11 +1,36 @@
 # Forecast Accuracy Dashboard
 
-Collect weather forecasts for the stations used by Kalshi's daily temperature
-markets, then build a history for comparing forecast accuracy. The collection
-pipeline and live verification reports are implemented. The dashboard is planned.
+This project compares daily temperature forecasts at the eight stations used by
+Kalshi’s high and low temperature markets. Scheduled workflows capture forecasts
+and verify them against observed temperatures or contract settlements. A separate
+historical evaluation tests forecast models and can download Kalshi price snapshots
+on demand for comparison. The dashboard is planned.
 
-The project saves forecast highs/lows, NOAA observations, and Kalshi contract
-metadata. It does not place trades or collect market prices.
+## Latest reports
+
+Each workflow publishes a snapshot of the analysis. The summary shows collection
+health and timing. The accuracy file contains scores and sample counts.
+
+| Publishing workflow | Collection summary | Provider scores |
+| --- | --- | --- |
+| Daily weather | [Summary](data/verification/daily/summary.md) | [Accuracy](data/verification/daily/accuracy.json) |
+| Market openings | [Summary](data/verification/market/summary.md) | [Accuracy](data/verification/market/accuracy.json) |
+
+### Generate a report offline
+
+From the repository root, use Python 3.11 or newer and install the collection
+dependencies once in your Python environment. Then build the report from saved files:
+
+```shell
+python -m pip install -r requirements-collection.txt
+python src/report_collection.py
+```
+
+Open `reports/live/summary.md` for the summary or `reports/live/accuracy.json` for
+scores. The report command makes no network requests. Without the archive key it
+uses the public forecasts and lists the excluded providers. If you have the existing
+key in a local `.env`, pass `--key-file .env` to include protected forecasts.
+See the [scoring rules](#live-health-and-accuracy-reports) for how comparisons qualify.
 
 ## Automatic collection
 
@@ -65,17 +90,9 @@ daily aggregates cannot be shifted to the market reporting window. All keyed
 forecast providers also require the separate `DATA_ENCRYPTION_KEY` secret. Missing
 or malformed archive keys stop keyed collection instead of writing plaintext.
 
-`GOOGLE_MAPS_DEMO_API_KEY` and `WEATHERAPI_API_KEY` are not used by the collectors.
-AccuWeather, Ambee, and Meteomatics are not integrated. Provider attribution and
-storage notes are in [data/README.md](data/README.md).
-
-Pirate Weather and Visual Crossing collect only fresh forecasts for the configured
-stations and comparison windows. They do not request past weather, reanalysis,
-historical forecasts, or paid historical add-ons. NOAA requests cover only completed
-station-dates with saved forecasts: missing outcomes remain eligible, while complete
-outcomes are refreshed for corrections within the last 14 days. Gaps and unrelated
-station-dates are not filled. Add historical data only when its issue time, station,
-and reporting window make it usable for this project's accuracy evaluation.
+The scheduled workflows collect live forecasts. NOAA requests cover completed
+station-dates with saved forecasts. Missing outcomes remain eligible, and the
+collector checks recent outcomes for corrections for 14 days.
 
 Meteosource uses the live [Point endpoint](https://www.meteosource.com/documentation).
 The default `free` tier supplies tomorrow’s local daily high and low. Its one-day
@@ -87,68 +104,11 @@ only after confirming your plan permits encrypted retention and public aggregate
 accuracy reporting. See the [API terms](https://www.meteosource.com/terms-of-service)
 and [plan coverage](https://www.meteosource.com/pricing). No historical endpoint is used.
 
-New protected archives use a dedicated, randomly generated `DATA_ENCRYPTION_KEY`.
-API keys authenticate requests; they no longer encrypt new files. Meteosource, OpenWeather,
-Pirate Weather, and Visual Crossing forecasts and optional raw responses are
-encrypted. Public-source observations, market metadata, and the existing historical
-training CSVs keep their current formats. Encryption does not grant retention,
-redistribution, model-training, or benchmarking rights.
-
-Keep `WEATHERBIT_ARCHIVAL_ALLOWED` and `TOMORROW_ARCHIVAL_ALLOWED` false unless the
-applicable agreement permits the intended use. Their existing records are left
-for a separate cleanup and are never selected by the encryption migration.
-
-## Archive key setup and migration
-
-Create a key once on a trusted machine:
-
-```shell
-python src/create_archive_key.py
-```
-
-This creates a gitignored `.env` with owner-only permissions and a random 32-byte
-key encoded as URL-safe base64. It never prints the key and refuses to overwrite
-an existing file. Copy the value into the **GitHub Actions repository secret**
-`DATA_ENCRYPTION_KEY` and keep a secure backup. Do not put it in repository variables,
-committed configuration, logs, or chat. The scripts do not automatically source
-`.env`; migration, reports, and private exports accept `--key-file .env` locally.
-
-The collection workflows migrate permitted older archives after capture, outside
-the timed request path. **Migrate encrypted forecast archives** also runs when its
-workflow or migration/encryption code is pushed to `main`, and can be run manually
-in Actions. It performs migration only, without weather API calls. GitHub supplies both
-the new secret and the original `VISUALCROSSING_API_KEY` needed by legacy files.
-
-For local migration:
-
-```shell
-# Read-only plan. Legacy Visual Crossing files need the original API key in the environment.
-python src/migrate_archives.py --key-file .env
-
-# Apply after all selected inputs have been read and validated.
-python src/migrate_archives.py --key-file .env --apply
-
-# If only the dedicated key is available locally, migrate these two providers first.
-python src/migrate_archives.py --key-file .env --providers openweathermap pirate_weather --apply
-```
-
-Migration splits selected providers out of shared JSONL files, preserves their
-original records and capture times, and encrypts optional raw responses. It verifies
-encrypted outputs before removing plaintext originals. Missing/wrong keys, damaged
-archives, and conflicting snapshots stop preflight without changing files. An
-interrupted write can leave identical duplicate copies; rerunning safely completes
-the migration. It never replaces originals with newly fetched forecasts.
-
-Once migrated, reading current archives needs only `DATA_ENCRYPTION_KEY`; teammates
-can work with saved data without provider credentials. Legacy `FAD1` Visual Crossing
-files still require their original API key. Preserve that key for old Git revisions
-and backups. This migration changes the working tree only; it does not remove past
-plaintext from Git history, forks, or existing clones.
-
-To rotate the dedicated key, retain the old key securely and run a complete migration
-with `--key-file NEW_PRIVATE_FILE --previous-key-file OLD_PRIVATE_FILE --apply`.
-Then update the Actions secret to match the migrated archives. Coordinate this with
-collection jobs; do not discard old keys while old revisions or backups are needed.
+Provider keys authenticate requests. The archive key encrypts saved forecasts and
+optional raw responses from keyed providers. Keep `WEATHERBIT_ARCHIVAL_ALLOWED`
+and `TOMORROW_ARCHIVAL_ALLOWED` false unless your agreement permits the intended
+use. For key setup, migration, rotation, and private exports, see the
+[archive maintenance guide](data/README.md#archive-key-setup-and-migration).
 
 ## Stations
 
@@ -263,54 +223,28 @@ if near-opening capture is required; GitHub schedules have
 
 ## Run locally
 
-Use Python 3.11 or newer. Collection uses `tzdata` and `cryptography` (for encrypted
-provider archives); the larger analysis dependencies in `requirements.txt` are
-optional for this stage.
+For local collection, install the dependencies in the [offline quick start](#generate-a-report-offline).
+Set provider credentials and archive settings in your shell environment. GitHub
+Actions supplies its secrets only to the workflows.
 
 ```shell
-python -m pip install -r requirements-collection.txt
 python -m unittest discover -s tests -v
+```
 
+The following commands make live requests and write to `data/`:
+
+```shell
 python src/collect_forecasts.py
-python src/collect_observations.py
 python src/collect_market_forecasts.py
+python src/collect_observations.py
 python src/refresh_settlements.py
-python src/report_collection.py
 ```
 
-Optional provider credentials must be available as environment variables locally.
-GitHub Actions secrets are available only within the workflows.
-
-With the archive key available locally, decrypt saved forecasts for analysis:
-
-```shell
-python src/export_private_forecasts.py --key-file .env
-```
-
-This makes no API calls. It writes JSONL under the gitignored
-`data/private/<provider>/` directories, preserving separate `forecasts/` and
-`market_forecasts/` datasets. The historical model-training dataset is not
-automatically extended with these new live providers. Live verification reads the
-encrypted archives directly, so it does not require this export. A missing or wrong
-decryption key never overwrites an archive.
-
-```shell
-# Save contract metadata without requesting weather forecasts.
-python src/collect_market_forecasts.py --discover-only
-
-# Poll near an upcoming opening for up to five minutes.
-python src/collect_market_forecasts.py --wait-seconds 300
-
-# Extend corrections only for station-dates with saved forecasts.
-python src/collect_observations.py --lookback-days 30
-
-# Analyze the last 30 capture dates offline; no historical API requests.
-python src/report_collection.py --lookback-days 30
-
-# Also retain permitted raw responses for new daily snapshots.
-python src/collect_forecasts.py --save-raw
-python src/collect_observations.py --save-raw
-```
+Use `--discover-only` with the market collector to save contract metadata without
+calling weather providers, or `--wait-seconds 300` to poll near an upcoming opening.
+The observation collector accepts `--lookback-days 30` to extend correction checks
+for saved forecast targets. The daily forecast and observation collectors accept
+`--save-raw` for debugging when the provider permits retention.
 
 ## Historical backfill
 
@@ -320,7 +254,7 @@ Live collection began in October 2026, which is too short for model training.
 | Source | Data | Coverage |
 | --- | --- | --- |
 | Open-Meteo Previous Runs API | GFS, HRRR, ICON, GEM, ECMWF forecasts made ~24h (`day1`) and ~48h (`day2`; not HRRR) ahead | GFS 2023+, others 2024+ |
-| Iowa Environmental Mesonet | NWS GFS MOS guidance, 12Z run on the previous day | 2023+ |
+| Iowa Environmental Mesonet | NWS GFS MOS guidance from the previous day’s 00Z and 12Z runs | 2023+ |
 | NOAA/NCEI | Observed daily highs/lows | 2023+ |
 | Kalshi (live and `/historical` endpoints) | Settled brackets, results, and settled values | Varies by series |
 
@@ -371,15 +305,23 @@ because the previous day's official report is published after both cutoffs. Ever
 method is scored on the same station-days. Tests enforce both rules.
 
 ```shell
-python -m pip install pandas numpy scikit-learn matplotlib
+python -m pip install -r requirements.txt
+python src/evaluate_models.py
+```
+
+For a comparison against historical market prices, download quotes for the desired
+series and cutoffs, then rerun evaluation:
+
+```shell
 python src/backfill_prices.py --cutoff open --series KXHIGHNY KXHIGHCHI --start 2026-01-01
 python src/backfill_prices.py --cutoff midnight --series KXHIGHNY KXHIGHCHI --start 2026-01-01
 python src/evaluate_models.py   # writes outputs/<cutoff>/metrics.json and figures/
 ```
 
-`outputs/` is generated and not committed; re-run the script to recreate it.
-[`notebooks/model_results.ipynb`](notebooks/model_results.ipynb) displays those outputs as
-tables and figures without recomputing them.
+The [model results notebook](notebooks/model_results.ipynb) reads metrics and
+figures from the locally generated `outputs/` directory. Running the notebook
+starts model evaluation if either cutoff’s `metrics.json` is missing or if you
+set `RERUN = True`.
 
 ## Extending collection
 
