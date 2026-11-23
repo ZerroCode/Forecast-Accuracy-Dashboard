@@ -1,12 +1,12 @@
 # Live forecast collection
 
-As of 2026-11-22T21:44:26Z — complete analysis.
+As of 2026-11-23T02:40:31Z — complete analysis.
 
-Expected captures: 3628. Ranking: available.
+Expected captures: 3564. Ranking: available.
 
 | Measure | Status | Count |
 | --- | --- | ---: |
-| Collection | missed_before_measurement_start | 312 |
+| Collection | missed_before_measurement_start | 248 |
 | Collection | missing | 17 |
 | Collection | request_failed | 2 |
 | Collection | saved | 3297 |
@@ -19,8 +19,8 @@ Expected captures: 3628. Ranking: available.
 
 ## Market openings
 
-- High: 0 of 240 discovered station-days qualified.
-- Low: 0 of 240 discovered station-days qualified.
+- High: 0 of 232 discovered station-days qualified.
+- Low: 0 of 232 discovered station-days qualified.
 
 Dates with a verified high and low at the same station: 0 (milestone: 5).
 

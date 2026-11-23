@@ -18,7 +18,7 @@
   },
   "comparison_tolerance_seconds": 600,
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-22T21:44:26Z",
+  "generated_at_utc": "2026-11-23T02:40:31Z",
   "groups": [
     {
       "candidate_cases": 40,
@@ -3374,11 +3374,11 @@
   "near_open_coverage": {
     "metrics": {
       "high": {
-        "expected_station_days": 240,
+        "expected_station_days": 232,
         "qualified_station_days": 0
       },
       "low": {
-        "expected_station_days": 240,
+        "expected_station_days": 232,
         "qualified_station_days": 0
       }
     },
