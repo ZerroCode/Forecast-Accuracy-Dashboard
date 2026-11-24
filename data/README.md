@@ -15,8 +15,7 @@ have a verified arrival timestamp and are excluded from timed accuracy compariso
 Observation collection is limited to station-dates with saved live forecasts;
 settlement refreshes revisit only already-known events relevant to those forecasts.
 NOAA values without verified window boundaries are retained for comparison research
-but are not silently treated as Kalshi settlement outcomes. See the scoring rules
-in [the project README](../README.md#live-health-and-accuracy-reports).
+but are not silently treated as Kalshi settlement outcomes. See the [live scoring rules](../docs/reports-and-scoring.md#live-health-and-accuracy-reports).
 
 The collection workflow writes deterministic, date-partitioned files here:
 
