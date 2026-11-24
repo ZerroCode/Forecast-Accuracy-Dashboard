@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from collect_market_forecasts import save_contracts
 from record_workflow_timing import annotate
 from weather_pipeline.config import load_stations
-from weather_pipeline.live_report import build_reports, timing_summary
+from weather_pipeline.live_report import build_reports, markdown_summary, timing_summary
 from weather_pipeline.storage import upsert_jsonl, write_json
 from weather_pipeline.telemetry import RunLog
 from weather_pipeline.verification import Outcomes, inspect_forecast
@@ -81,6 +81,12 @@ class LiveReportsTests(unittest.TestCase):
         self.assertEqual({"provider": "nws", "n": 6, "mae_f": 1, "bias_f": -1,
                           "within_1f": 1, "within_2f": 1}, group["metrics"][0])
         self.assertEqual(3, group["metrics"][1]["mae_f"])
+        summary = markdown_summary(health, accuracy)
+        self.assertIn("Near-opening market forecasts · high temperatures", summary)
+        self.assertIn("Kalshi settlement from The Weather Company", summary)
+        self.assertIn("6 shared station-days and 6 distinct target dates.", summary)
+        self.assertIn("| NWS | 1.00 | -1.00 |\n| Open-Meteo | 3.00 | +3.00 |", summary)
+        self.assertEqual(1, summary.count("| NWS |"))
         revised = contract(rows[0], 71)
         revised["retrieved_at_utc"] = "2026-11-18T18:00:00Z"
         save_contracts(self.root, [revised])
@@ -153,7 +159,10 @@ class LiveReportsTests(unittest.TestCase):
         save_forecasts(self.root, [row], key=SECRET)
         save_contracts(self.root, [contract(row)])
         health, accuracy = self.report(key=SECRET)
-        public = json.dumps([health, accuracy])
+        summary = markdown_summary(health, accuracy)
+        self.assertIn("Waiting for 5 common target dates.", summary)
+        self.assertNotIn("| Visual Crossing |", summary)
+        public = json.dumps([health, accuracy]) + summary
         for private in ("71.23456789", SECRET, "forecast_high_f", "expiration_value", '"error"'):
             self.assertNotIn(private, public)
         self.assertEqual(1, accuracy["groups"][0]["common_cases"])
@@ -163,6 +172,7 @@ class LiveReportsTests(unittest.TestCase):
             health, accuracy = self.report()
         self.assertEqual("partial", health["status"])
         self.assertEqual(["visual_crossing"], accuracy["excluded_providers"])
+        self.assertIn("Excluded providers: Visual Crossing.", markdown_summary(health, accuracy))
         self.assertEqual("unavailable", accuracy["near_open_coverage"]["status"])
         health, accuracy = self.report(key="wrong-key")
         self.assertEqual("archive_unreadable", health["archive_problems"][0]["reason"])
@@ -173,6 +183,7 @@ class LiveReportsTests(unittest.TestCase):
         health, accuracy = self.report()
         self.assertEqual("partial", health["status"])
         self.assertEqual("blocked_by_unreadable_archive", accuracy["ranking_status"])
+        self.assertIn("An unreadable archive prevents comparison.", markdown_summary(health, accuracy))
 
     def test_report_does_not_use_outcomes_retrieved_after_its_timestamp(self):
         row = forecast()
