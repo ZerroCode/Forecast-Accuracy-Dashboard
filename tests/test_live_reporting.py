@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from collect_market_forecasts import save_contracts
 from record_workflow_timing import annotate
 from weather_pipeline.config import load_stations
-from weather_pipeline.live_report import build_reports, markdown_summary, timing_summary
+from weather_pipeline.live_report import build_reports, markdown_summary, provider_comparisons, timing_summary
 from weather_pipeline.storage import upsert_jsonl, write_json
 from weather_pipeline.telemetry import RunLog
 from weather_pipeline.verification import Outcomes, inspect_forecast
@@ -66,6 +66,15 @@ class LiveReportsTests(unittest.TestCase):
 
     def report(self, **kwargs):
         return build_reports(self.root, [STATION], NOW, **kwargs)
+
+    def test_published_tables_match_their_accuracy_snapshot(self):
+        for workflow in ("daily", "market"):
+            with self.subTest(workflow=workflow):
+                directory = ROOT / "data/verification" / workflow
+                accuracy = json.loads((directory / "accuracy.json").read_text(encoding="utf-8"))
+                summary = (directory / "summary.md").read_text(encoding="utf-8")
+                self.assertIn(accuracy["generated_at_utc"], summary)
+                self.assertIn("\n".join(provider_comparisons(accuracy)), summary)
 
     def test_comparison_uses_same_cases_with_known_errors_and_recomputes_corrections(self):
         rows = [forecast(day, provider) for day in range(10, 16) for provider in ("open_meteo", "nws")]
