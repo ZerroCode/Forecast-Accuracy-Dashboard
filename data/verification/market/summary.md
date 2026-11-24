@@ -1,6 +1,6 @@
 # Live forecast collection
 
-As of 2026-11-24T00:47:31Z — complete analysis.
+As of 2026-11-24T01:24:05Z — complete analysis.
 
 Expected captures: 3600. Ranking: available.
 
@@ -30,51 +30,51 @@ Lower mean absolute error is better. Positive bias means the forecast was too wa
 
 ### Late daily forecasts · high temperatures
 
-Verified against Kalshi settlement from The Weather Company over 41 shared station-days and 6 distinct target dates.
+Verified against Kalshi settlement from The Weather Company over 46 shared station-days and 6 distinct target dates.
 
 | Provider | Mean absolute error (°F) | Signed bias (°F) |
 | --- | ---: | ---: |
-| NWS | 1.71 | -0.98 |
-| Open-Meteo | 1.82 | -1.00 |
-| Visual Crossing | 2.19 | -1.89 |
-| Pirate Weather | 2.40 | -1.92 |
-| OpenWeather | 2.49 | -1.32 |
+| NWS | 1.61 | -0.96 |
+| Open-Meteo | 1.77 | -1.02 |
+| Visual Crossing | 2.13 | -1.86 |
+| Pirate Weather | 2.31 | -1.87 |
+| OpenWeather | 2.35 | -1.14 |
 
 ### Late daily forecasts · low temperatures
 
-Verified against Kalshi settlement from The Weather Company over 41 shared station-days and 6 distinct target dates.
+Verified against Kalshi settlement from The Weather Company over 46 shared station-days and 6 distinct target dates.
 
 | Provider | Mean absolute error (°F) | Signed bias (°F) |
 | --- | ---: | ---: |
-| NWS | 1.73 | +0.12 |
-| Pirate Weather | 1.84 | -0.14 |
-| Visual Crossing | 2.25 | +0.17 |
-| OpenWeather | 2.48 | -1.04 |
-| Open-Meteo | 3.50 | -2.91 |
+| NWS | 1.83 | +0.22 |
+| Pirate Weather | 1.88 | +0.00 |
+| Visual Crossing | 2.22 | +0.32 |
+| OpenWeather | 2.72 | -0.70 |
+| Open-Meteo | 3.42 | -2.89 |
 
 ### Late market forecasts · high temperatures
 
-Verified against Kalshi settlement from The Weather Company over 72 shared station-days and 10 distinct target dates.
+Verified against Kalshi settlement from The Weather Company over 77 shared station-days and 10 distinct target dates.
 
 | Provider | Mean absolute error (°F) | Signed bias (°F) |
 | --- | ---: | ---: |
-| NWS | 1.86 | -1.11 |
-| Pirate Weather | 2.35 | -1.95 |
-| OpenWeather | 2.36 | -1.05 |
-| Visual Crossing | 2.46 | -2.31 |
-| Open-Meteo | 2.57 | -2.16 |
+| NWS | 1.77 | -1.01 |
+| OpenWeather | 2.29 | -0.97 |
+| Pirate Weather | 2.30 | -1.92 |
+| Visual Crossing | 2.40 | -2.26 |
+| Open-Meteo | 2.48 | -2.09 |
 
 ### Late market forecasts · low temperatures
 
-Verified against Kalshi settlement from The Weather Company over 72 shared station-days and 10 distinct target dates.
+Verified against Kalshi settlement from The Weather Company over 77 shared station-days and 10 distinct target dates.
 
 | Provider | Mean absolute error (°F) | Signed bias (°F) |
 | --- | ---: | ---: |
-| NWS | 1.57 | +0.24 |
-| Pirate Weather | 1.78 | +0.27 |
-| Visual Crossing | 2.09 | +0.39 |
-| OpenWeather | 2.66 | -0.68 |
-| Open-Meteo | 3.02 | -2.63 |
+| NWS | 1.62 | +0.27 |
+| Pirate Weather | 1.81 | +0.33 |
+| Visual Crossing | 2.09 | +0.47 |
+| OpenWeather | 2.80 | -0.50 |
+| Open-Meteo | 2.95 | -2.57 |
 
 ### Near-opening market forecasts · high temperatures
 
