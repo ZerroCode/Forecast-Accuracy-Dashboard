@@ -309,6 +309,43 @@ def kind_sorted(runs):
     return sorted(runs, key=lambda r: (r["collector_started_at_utc"], r["kind"]))
 
 
+def provider_comparisons(accuracy):
+    """Render the published all-station groups without pooling or rescoring them."""
+    names = {"meteosource": "Meteosource", "nws": "NWS", "open_meteo": "Open-Meteo",
+             "openweathermap": "OpenWeather", "pirate_weather": "Pirate Weather",
+             "tomorrow_io": "Tomorrow.io", "visual_crossing": "Visual Crossing", "weatherbit": "Weatherbit"}
+    windows = {"daily_before_schedule": "Early daily forecasts", "daily_scheduled": "On-time daily forecasts",
+               "daily_late": "Late daily forecasts", "market_near_open": "Near-opening market forecasts",
+               "market_late": "Late market forecasts"}
+    lines = ["", "## Provider accuracy across stations", ""]
+    if accuracy["excluded_providers"]:
+        excluded = [names.get(p, p) for p in accuracy["excluded_providers"]]
+        lines.extend(["Excluded providers: " + ", ".join(excluded) + ".", ""])
+    if accuracy["ranking_status"] == "blocked_by_unreadable_archive":
+        return lines + ["An unreadable archive prevents comparison."]
+    groups = [g for g in accuracy["groups"] if g["station_id"] == "all"]
+    if not groups:
+        return lines + ["Waiting for comparable forecasts with verified outcomes."]
+
+    lines.append("Lower mean absolute error is better. Positive bias means the forecast was too warm.")
+    for group in groups:
+        cohort = windows.get(group["cohort"], group["cohort"])
+        source = group["outcome_source"].replace("kalshi_settlement:", "Kalshi settlement from ")
+        if source == "noaa_ncei_daily_summaries":
+            source = "NOAA NCEI Daily Summaries"
+        lines.extend(["", f"### {cohort} · {group['metric']} temperatures", "",
+                      f"Verified against {source} over {group['common_cases']} shared station-days "
+                      f"and {group['distinct_dates']} distinct target dates.", ""])
+        if group["status"] != "scored":
+            lines.append(f"Waiting for {accuracy['minimum_distinct_dates']} common target dates.")
+            continue
+        lines.extend(["| Provider | Mean absolute error (°F) | Signed bias (°F) |", "| --- | ---: | ---: |"])
+        for row in sorted(group["metrics"], key=lambda r: (r["mae_f"], r["provider"])):
+            provider = names.get(row["provider"], row["provider"])
+            lines.append(f"| {provider} | {row['mae_f']:.2f} | {row['bias_f']:+z.2f} |")
+    return lines
+
+
 def markdown_summary(health, accuracy):
     statuses = Counter(r["collection_status"] for r in health["snapshots"])
     cohorts = Counter(r["cohort"] for r in health["snapshots"] if r.get("cohort"))
@@ -328,6 +365,7 @@ def markdown_summary(health, accuracy):
                          f"{counts['expected_station_days']} discovered station-days qualified.")
         lines.extend(["", f"Dates with a verified high and low at the same station: "
                       f"{coverage['paired_dates']} (milestone: {coverage['required_dates']})."])
+    lines.extend(provider_comparisons(accuracy))
     if any("meteosource" in roster for roster in accuracy.get("comparison_rosters", {}).values()):
         lines.extend(["", "Weather data by [Meteosource](https://www.meteosource.com/)."])
     if health["archive_problems"]:

@@ -9,7 +9,10 @@ on demand for comparison. The dashboard is planned.
 ## Latest reports
 
 Each workflow publishes a snapshot of the analysis. The summary shows collection
-health and timing. The accuracy file contains scores and sample counts.
+health, timing, and provider accuracy across stations. It lists providers by mean
+absolute error and shows signed bias, shared station-days, and distinct target
+dates for each high/low metric, capture window, and outcome source. The accuracy
+file also contains station-level scores and sample counts.
 
 | Publishing workflow | Collection summary | Provider scores |
 | --- | --- | --- |
