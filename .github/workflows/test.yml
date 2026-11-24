@@ -2,7 +2,7 @@ name: Test pipeline
 
 on:
   pull_request:
-    paths: ["src/**", "tests/**", "config/**", "requirements*.txt", ".github/workflows/**"]
+    paths: ["src/**", "tests/**", "config/**", "data/verification/**", "requirements*.txt", ".github/workflows/**"]
   push:
     paths: ["src/**", "tests/**", "config/**", "requirements*.txt", ".github/workflows/**"]
   workflow_dispatch:
@@ -22,3 +22,7 @@ jobs:
           cache-dependency-path: requirements*.txt
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test tests/public_reports.test.mjs

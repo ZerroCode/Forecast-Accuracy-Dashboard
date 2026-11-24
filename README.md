@@ -19,6 +19,35 @@ file also contains station-level scores and sample counts.
 | Daily weather | [Summary](data/verification/daily/summary.md) | [Accuracy](data/verification/daily/accuracy.json) |
 | Market openings | [Summary](data/verification/market/summary.md) | [Accuracy](data/verification/market/accuracy.json) |
 
+### Read the latest provider comparison
+
+Both accuracy files contain daily and market comparisons. The [public report reader](src/public_reports.mjs)
+loads the two published files and selects the one with the newest `generated_at_utc`.
+Daily wins a timestamp tie. A newer partial or blocked report takes precedence over
+older scores. If only one file loads successfully, `unavailableWorkflows` names
+the missing or unreadable publication. If neither loads, the reader raises an error.
+
+```js
+import { loadLatestReport, getComparison } from "./src/public_reports.mjs";
+
+const { workflow, report, unavailableWorkflows } = await loadLatestReport();
+const comparison = getComparison(report, {
+  stationId: "all",
+  metric: "high",
+  cohort: "daily_late",
+  outcomeSource: "kalshi_settlement:The Weather Company",
+});
+```
+
+The default URLs resolve relative to the module in a web-served repository.
+For another layout, pass the absolute URL of the public verification directory,
+including its trailing slash. Filters use the identifiers in `report.groups`.
+A scored comparison returns the published provider metrics sorted by mean absolute
+error. A pending comparison returns a waiting message, shared case and date counts,
+and an empty score list. A blocked comparison returns the archive error message.
+For a partial report, display `comparison.excludedProviders` alongside any scores.
+The public accuracy files supply all inputs to this reader.
+
 ### Generate a report offline
 
 From the repository root, use Python 3.11 or newer and install the collection
