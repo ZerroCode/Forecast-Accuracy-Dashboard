@@ -1,0 +1,624 @@
+{
+  "collector_finished_at_utc": "2026-11-25T21:47:39.755908Z",
+  "collector_started_at_utc": "2026-11-25T21:47:32.514135Z",
+  "discovery": [],
+  "expected": [
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-25",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-26"
+    }
+  ],
+  "failure_count": 0,
+  "github_job": "collect",
+  "github_run_attempt": "1",
+  "github_run_id": "45707495416",
+  "job_started_at_utc": "2026-11-25T21:47:12Z",
+  "kind": "daily",
+  "requests": [
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.552203Z",
+      "request_seconds": 0.037,
+      "request_started_at_utc": "2026-11-25T21:47:32.514828Z",
+      "station_id": "nyc_central_park",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.887123Z",
+      "request_seconds": 0.334,
+      "request_started_at_utc": "2026-11-25T21:47:32.552713Z",
+      "station_id": "los_angeles_lax",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.912850Z",
+      "request_seconds": 0.025,
+      "request_started_at_utc": "2026-11-25T21:47:32.887719Z",
+      "station_id": "chicago_midway",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.937175Z",
+      "request_seconds": 0.024,
+      "request_started_at_utc": "2026-11-25T21:47:32.913378Z",
+      "station_id": "miami_international",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.962140Z",
+      "request_seconds": 0.024,
+      "request_started_at_utc": "2026-11-25T21:47:32.937686Z",
+      "station_id": "dallas_fort_worth",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:32.986705Z",
+      "request_seconds": 0.024,
+      "request_started_at_utc": "2026-11-25T21:47:32.962648Z",
+      "station_id": "seattle_tacoma",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:33.011278Z",
+      "request_seconds": 0.024,
+      "request_started_at_utc": "2026-11-25T21:47:32.987202Z",
+      "station_id": "boston_logan",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "open_meteo",
+      "request_finished_at_utc": "2026-11-25T21:47:33.035187Z",
+      "request_seconds": 0.023,
+      "request_started_at_utc": "2026-11-25T21:47:33.011752Z",
+      "station_id": "san_francisco_sfo",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:33.371269Z",
+      "request_seconds": 0.334,
+      "request_started_at_utc": "2026-11-25T21:47:33.037067Z",
+      "station_id": "nyc_central_park",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:33.671127Z",
+      "request_seconds": 0.299,
+      "request_started_at_utc": "2026-11-25T21:47:33.371832Z",
+      "station_id": "los_angeles_lax",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:33.966176Z",
+      "request_seconds": 0.294,
+      "request_started_at_utc": "2026-11-25T21:47:33.671714Z",
+      "station_id": "chicago_midway",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:34.306997Z",
+      "request_seconds": 0.34,
+      "request_started_at_utc": "2026-11-25T21:47:33.966769Z",
+      "station_id": "miami_international",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:34.617410Z",
+      "request_seconds": 0.31,
+      "request_started_at_utc": "2026-11-25T21:47:34.307601Z",
+      "station_id": "dallas_fort_worth",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:34.933760Z",
+      "request_seconds": 0.316,
+      "request_started_at_utc": "2026-11-25T21:47:34.617972Z",
+      "station_id": "seattle_tacoma",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:35.254501Z",
+      "request_seconds": 0.32,
+      "request_started_at_utc": "2026-11-25T21:47:34.934356Z",
+      "station_id": "boston_logan",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "nws",
+      "request_finished_at_utc": "2026-11-25T21:47:35.582430Z",
+      "request_seconds": 0.327,
+      "request_started_at_utc": "2026-11-25T21:47:35.255089Z",
+      "station_id": "san_francisco_sfo",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.619689Z",
+      "request_seconds": 0.035,
+      "request_started_at_utc": "2026-11-25T21:47:35.585104Z",
+      "station_id": "nyc_central_park",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.662370Z",
+      "request_seconds": 0.042,
+      "request_started_at_utc": "2026-11-25T21:47:35.620200Z",
+      "station_id": "los_angeles_lax",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.709563Z",
+      "request_seconds": 0.047,
+      "request_started_at_utc": "2026-11-25T21:47:35.662899Z",
+      "station_id": "chicago_midway",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.750093Z",
+      "request_seconds": 0.04,
+      "request_started_at_utc": "2026-11-25T21:47:35.710100Z",
+      "station_id": "miami_international",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.791537Z",
+      "request_seconds": 0.041,
+      "request_started_at_utc": "2026-11-25T21:47:35.750630Z",
+      "station_id": "dallas_fort_worth",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.831665Z",
+      "request_seconds": 0.04,
+      "request_started_at_utc": "2026-11-25T21:47:35.792060Z",
+      "station_id": "seattle_tacoma",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.876898Z",
+      "request_seconds": 0.045,
+      "request_started_at_utc": "2026-11-25T21:47:35.832212Z",
+      "station_id": "boston_logan",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "openweathermap",
+      "request_finished_at_utc": "2026-11-25T21:47:35.932262Z",
+      "request_seconds": 0.055,
+      "request_started_at_utc": "2026-11-25T21:47:35.877517Z",
+      "station_id": "san_francisco_sfo",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:36.347651Z",
+      "request_seconds": 0.405,
+      "request_started_at_utc": "2026-11-25T21:47:35.942632Z",
+      "station_id": "nyc_central_park",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:36.515678Z",
+      "request_seconds": 0.167,
+      "request_started_at_utc": "2026-11-25T21:47:36.348281Z",
+      "station_id": "los_angeles_lax",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:36.873780Z",
+      "request_seconds": 0.357,
+      "request_started_at_utc": "2026-11-25T21:47:36.516298Z",
+      "station_id": "chicago_midway",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:37.092268Z",
+      "request_seconds": 0.218,
+      "request_started_at_utc": "2026-11-25T21:47:36.874414Z",
+      "station_id": "miami_international",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:37.282180Z",
+      "request_seconds": 0.189,
+      "request_started_at_utc": "2026-11-25T21:47:37.093142Z",
+      "station_id": "dallas_fort_worth",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:37.453914Z",
+      "request_seconds": 0.171,
+      "request_started_at_utc": "2026-11-25T21:47:37.282822Z",
+      "station_id": "seattle_tacoma",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:37.749646Z",
+      "request_seconds": 0.295,
+      "request_started_at_utc": "2026-11-25T21:47:37.454578Z",
+      "station_id": "boston_logan",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "pirate_weather",
+      "request_finished_at_utc": "2026-11-25T21:47:37.915540Z",
+      "request_seconds": 0.165,
+      "request_started_at_utc": "2026-11-25T21:47:37.750303Z",
+      "station_id": "san_francisco_sfo",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:38.157752Z",
+      "request_seconds": 0.238,
+      "request_started_at_utc": "2026-11-25T21:47:37.919392Z",
+      "station_id": "nyc_central_park",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:38.360804Z",
+      "request_seconds": 0.202,
+      "request_started_at_utc": "2026-11-25T21:47:38.158448Z",
+      "station_id": "los_angeles_lax",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:38.583656Z",
+      "request_seconds": 0.222,
+      "request_started_at_utc": "2026-11-25T21:47:38.361528Z",
+      "station_id": "chicago_midway",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:38.824089Z",
+      "request_seconds": 0.24,
+      "request_started_at_utc": "2026-11-25T21:47:38.584366Z",
+      "station_id": "miami_international",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:39.042521Z",
+      "request_seconds": 0.218,
+      "request_started_at_utc": "2026-11-25T21:47:38.824834Z",
+      "station_id": "dallas_fort_worth",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:39.254538Z",
+      "request_seconds": 0.211,
+      "request_started_at_utc": "2026-11-25T21:47:39.043218Z",
+      "station_id": "seattle_tacoma",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:39.459897Z",
+      "request_seconds": 0.205,
+      "request_started_at_utc": "2026-11-25T21:47:39.255265Z",
+      "station_id": "boston_logan",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    },
+    {
+      "provider": "visual_crossing",
+      "request_finished_at_utc": "2026-11-25T21:47:39.752128Z",
+      "request_seconds": 0.291,
+      "request_started_at_utc": "2026-11-25T21:47:39.460653Z",
+      "station_id": "san_francisco_sfo",
+      "status": "response_received",
+      "target_date_local": "2026-11-26"
+    }
+  ],
+  "runner_ready_at_utc": "2026-11-25T21:47:15Z",
+  "schema_version": 1,
+  "status": "completed",
+  "timing_status": "available",
+  "trigger": "schedule",
+  "trigger_schedule": "17 12 * * *",
+  "workflow_created_at_utc": "2026-11-25T21:47:09Z",
+  "workflow_started_at_utc": "2026-11-25T21:47:09Z",
+  "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/45707495416"
+}
