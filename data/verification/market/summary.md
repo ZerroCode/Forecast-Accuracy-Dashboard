@@ -1,6 +1,6 @@
 # Live forecast collection
 
-As of 2026-11-26T00:15:27Z — complete analysis.
+As of 2026-11-26T09:28:08Z — complete analysis.
 
 Expected captures: 3608. Ranking: available.
 
@@ -13,7 +13,8 @@ Expected captures: 3608. Ranking: available.
 | Timing | daily_late | 1269 |
 | Timing | market_late | 2028 |
 | Timing | market_near_open | 64 |
-| Outcome | measurement_pending | 320 |
+| Outcome | awaiting_outcome | 160 |
+| Outcome | measurement_pending | 160 |
 | Outcome | ready | 2632 |
 
 ## Market openings
