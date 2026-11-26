@@ -17,7 +17,7 @@
     ]
   },
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-26T09:28:08Z",
+  "generated_at_utc": "2026-11-26T19:35:03Z",
   "lookback_days": 30,
   "runs": [
     {
@@ -11539,6 +11539,551 @@
       "workflow_created_at_utc": "2026-11-26T09:27:47Z",
       "workflow_started_at_utc": "2026-11-26T09:27:47Z",
       "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/45792186873"
+    },
+    {
+      "collector_finished_at_utc": "2026-11-26T19:35:02.614943Z",
+      "collector_seconds": 22.533,
+      "collector_started_at_utc": "2026-11-26T19:34:40.082343Z",
+      "creation_to_job_seconds": 3.0,
+      "discovery_seconds": 13.94,
+      "failure_count": 0,
+      "github_run_attempt": "1",
+      "github_run_id": "45884644266",
+      "job_started_at_utc": "2026-11-26T19:34:30Z",
+      "job_to_collector_seconds": 10.082,
+      "kind": "market",
+      "opening_pilot_wait_seconds": 0,
+      "requests": [
+        {
+          "event_ticker": "KXHIGHTBOS-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16494.331,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:54.330750Z",
+          "request_seconds": 0.198,
+          "request_started_at_utc": "2026-11-26T19:34:54.132313Z",
+          "station_id": "boston_logan",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTBOS-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16494.56,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:34:54.559938Z",
+          "request_seconds": 0.227,
+          "request_started_at_utc": "2026-11-26T19:34:54.332712Z",
+          "station_id": "boston_logan",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTBOS-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16494.763,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:34:54.762999Z",
+          "request_seconds": 0.201,
+          "request_started_at_utc": "2026-11-26T19:34:54.561977Z",
+          "station_id": "boston_logan",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTBOS-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16495.053,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:34:55.053053Z",
+          "request_seconds": 0.288,
+          "request_started_at_utc": "2026-11-26T19:34:54.765465Z",
+          "station_id": "boston_logan",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTBOS-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16495.369,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:34:55.368900Z",
+          "request_seconds": 0.313,
+          "request_started_at_utc": "2026-11-26T19:34:55.055500Z",
+          "station_id": "boston_logan",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHCHI-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16495.958,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:55.958011Z",
+          "request_seconds": 0.166,
+          "request_started_at_utc": "2026-11-26T19:34:55.791605Z",
+          "station_id": "chicago_midway",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHCHI-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16496.129,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:34:56.129497Z",
+          "request_seconds": 0.169,
+          "request_started_at_utc": "2026-11-26T19:34:55.960667Z",
+          "station_id": "chicago_midway",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHCHI-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16496.299,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:34:56.299331Z",
+          "request_seconds": 0.167,
+          "request_started_at_utc": "2026-11-26T19:34:56.132092Z",
+          "station_id": "chicago_midway",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHCHI-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16496.536,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:34:56.535538Z",
+          "request_seconds": 0.233,
+          "request_started_at_utc": "2026-11-26T19:34:56.302119Z",
+          "station_id": "chicago_midway",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHCHI-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16496.707,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:34:56.706554Z",
+          "request_seconds": 0.168,
+          "request_started_at_utc": "2026-11-26T19:34:56.538319Z",
+          "station_id": "chicago_midway",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTDAL-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16496.867,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:56.867430Z",
+          "request_seconds": 0.15,
+          "request_started_at_utc": "2026-11-26T19:34:56.717370Z",
+          "station_id": "dallas_fort_worth",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTDAL-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16497.065,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:34:57.065445Z",
+          "request_seconds": 0.195,
+          "request_started_at_utc": "2026-11-26T19:34:56.870308Z",
+          "station_id": "dallas_fort_worth",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTDAL-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16497.24,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:34:57.239948Z",
+          "request_seconds": 0.172,
+          "request_started_at_utc": "2026-11-26T19:34:57.068277Z",
+          "station_id": "dallas_fort_worth",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTDAL-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16497.49,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:34:57.490029Z",
+          "request_seconds": 0.247,
+          "request_started_at_utc": "2026-11-26T19:34:57.242886Z",
+          "station_id": "dallas_fort_worth",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTDAL-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16497.657,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:34:57.657310Z",
+          "request_seconds": 0.164,
+          "request_started_at_utc": "2026-11-26T19:34:57.493028Z",
+          "station_id": "dallas_fort_worth",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHLAX-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16497.826,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:57.825855Z",
+          "request_seconds": 0.148,
+          "request_started_at_utc": "2026-11-26T19:34:57.677627Z",
+          "station_id": "los_angeles_lax",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHLAX-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.003,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:34:58.002569Z",
+          "request_seconds": 0.174,
+          "request_started_at_utc": "2026-11-26T19:34:57.828945Z",
+          "station_id": "los_angeles_lax",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHLAX-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.173,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:34:58.173425Z",
+          "request_seconds": 0.168,
+          "request_started_at_utc": "2026-11-26T19:34:58.005686Z",
+          "station_id": "los_angeles_lax",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHLAX-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.39,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:34:58.390380Z",
+          "request_seconds": 0.214,
+          "request_started_at_utc": "2026-11-26T19:34:58.176591Z",
+          "station_id": "los_angeles_lax",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHLAX-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.545,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:34:58.544512Z",
+          "request_seconds": 0.151,
+          "request_started_at_utc": "2026-11-26T19:34:58.393594Z",
+          "station_id": "los_angeles_lax",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHMIA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.824,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:58.823969Z",
+          "request_seconds": 0.223,
+          "request_started_at_utc": "2026-11-26T19:34:58.601380Z",
+          "station_id": "miami_international",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHMIA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16498.978,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:34:58.977834Z",
+          "request_seconds": 0.15,
+          "request_started_at_utc": "2026-11-26T19:34:58.827977Z",
+          "station_id": "miami_international",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHMIA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16499.148,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:34:59.147885Z",
+          "request_seconds": 0.167,
+          "request_started_at_utc": "2026-11-26T19:34:58.981127Z",
+          "station_id": "miami_international",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHMIA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16499.479,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:34:59.478824Z",
+          "request_seconds": 0.328,
+          "request_started_at_utc": "2026-11-26T19:34:59.151277Z",
+          "station_id": "miami_international",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHMIA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16499.66,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:34:59.659956Z",
+          "request_seconds": 0.178,
+          "request_started_at_utc": "2026-11-26T19:34:59.482154Z",
+          "station_id": "miami_international",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHNY-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16499.88,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:34:59.880212Z",
+          "request_seconds": 0.196,
+          "request_started_at_utc": "2026-11-26T19:34:59.683832Z",
+          "station_id": "nyc_central_park",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHNY-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16500.038,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:35:00.038438Z",
+          "request_seconds": 0.155,
+          "request_started_at_utc": "2026-11-26T19:34:59.883762Z",
+          "station_id": "nyc_central_park",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHNY-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16500.205,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:35:00.205382Z",
+          "request_seconds": 0.163,
+          "request_started_at_utc": "2026-11-26T19:35:00.041976Z",
+          "station_id": "nyc_central_park",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHNY-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16500.547,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:35:00.546850Z",
+          "request_seconds": 0.338,
+          "request_started_at_utc": "2026-11-26T19:35:00.208993Z",
+          "station_id": "nyc_central_park",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHNY-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16500.686,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:35:00.686156Z",
+          "request_seconds": 0.136,
+          "request_started_at_utc": "2026-11-26T19:35:00.550485Z",
+          "station_id": "nyc_central_park",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSFO-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16500.928,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:35:00.928233Z",
+          "request_seconds": 0.15,
+          "request_started_at_utc": "2026-11-26T19:35:00.778411Z",
+          "station_id": "san_francisco_sfo",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSFO-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16501.09,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:35:01.089805Z",
+          "request_seconds": 0.158,
+          "request_started_at_utc": "2026-11-26T19:35:00.932170Z",
+          "station_id": "san_francisco_sfo",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSFO-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16501.265,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:35:01.264800Z",
+          "request_seconds": 0.171,
+          "request_started_at_utc": "2026-11-26T19:35:01.093682Z",
+          "station_id": "san_francisco_sfo",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSFO-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16501.489,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:35:01.488872Z",
+          "request_seconds": 0.22,
+          "request_started_at_utc": "2026-11-26T19:35:01.268613Z",
+          "station_id": "san_francisco_sfo",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSFO-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16501.615,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:35:01.614642Z",
+          "request_seconds": 0.122,
+          "request_started_at_utc": "2026-11-26T19:35:01.492728Z",
+          "station_id": "san_francisco_sfo",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSEA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16501.786,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "open_meteo",
+          "request_finished_at_utc": "2026-11-26T19:35:01.785638Z",
+          "request_seconds": 0.155,
+          "request_started_at_utc": "2026-11-26T19:35:01.630963Z",
+          "station_id": "seattle_tacoma",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSEA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16502.0,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "nws",
+          "request_finished_at_utc": "2026-11-26T19:35:02.000063Z",
+          "request_seconds": 0.21,
+          "request_started_at_utc": "2026-11-26T19:35:01.789707Z",
+          "station_id": "seattle_tacoma",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSEA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16502.17,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "openweathermap",
+          "request_finished_at_utc": "2026-11-26T19:35:02.169570Z",
+          "request_seconds": 0.165,
+          "request_started_at_utc": "2026-11-26T19:35:02.004111Z",
+          "station_id": "seattle_tacoma",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSEA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16502.439,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "pirate_weather",
+          "request_finished_at_utc": "2026-11-26T19:35:02.439008Z",
+          "request_seconds": 0.265,
+          "request_started_at_utc": "2026-11-26T19:35:02.173706Z",
+          "station_id": "seattle_tacoma",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        },
+        {
+          "event_ticker": "KXHIGHTSEA-26NOV27",
+          "market_open_time_utc": "2026-11-26T15:00:00Z",
+          "opening_to_response_seconds": 16502.599,
+          "opening_to_workflow_creation_seconds": 16467.0,
+          "provider": "visual_crossing",
+          "request_finished_at_utc": "2026-11-26T19:35:02.598626Z",
+          "request_seconds": 0.156,
+          "request_started_at_utc": "2026-11-26T19:35:02.443053Z",
+          "station_id": "seattle_tacoma",
+          "status": "response_received",
+          "target_date_local": "2026-11-27"
+        }
+      ],
+      "runner_ready_at_utc": "2026-11-26T19:34:32Z",
+      "setup_seconds": 8.082,
+      "status": "completed",
+      "timing_status": "available",
+      "trigger": "schedule",
+      "trigger_schedule": "7 * * * *",
+      "workflow_created_at_utc": "2026-11-26T19:34:27Z",
+      "workflow_started_at_utc": "2026-11-26T19:34:27Z",
+      "workflow_url": "https://github.com/ZerroCode/Forecast-Accuracy-Dashboard/actions/runs/45884644266"
     }
   ],
   "schema_version": 1,
@@ -11906,8 +12451,8 @@
       "delay_seconds": 36971.681665,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -11930,6 +12475,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -12294,8 +12847,8 @@
       "delay_seconds": 36971.42166,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -12318,6 +12871,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -12682,8 +13243,8 @@
       "delay_seconds": 36971.573847,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -12706,6 +13267,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -13070,8 +13639,8 @@
       "delay_seconds": 36971.354392,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -13094,6 +13663,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -13458,8 +14035,8 @@
       "delay_seconds": 36971.531647,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -13482,6 +14059,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -13846,8 +14431,8 @@
       "delay_seconds": 36971.28625,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -13870,6 +14455,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -14234,7 +14827,7 @@
       "delay_seconds": 36971.726081,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
+        "high": "ready",
         "low": "awaiting_outcome"
       },
       "provider": "nws",
@@ -14258,6 +14851,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -14622,8 +15223,8 @@
       "delay_seconds": 36971.619843,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -14646,6 +15247,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "nws",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -15010,8 +15619,8 @@
       "delay_seconds": 36971.089272,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -15034,6 +15643,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -15398,8 +16015,8 @@
       "delay_seconds": 36970.875509,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -15422,6 +16039,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -15786,8 +16411,8 @@
       "delay_seconds": 36970.983925,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -15810,6 +16435,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -16167,8 +16800,8 @@
       "delay_seconds": 36970.823361,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -16191,6 +16824,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -16551,8 +17192,8 @@
       "delay_seconds": 36970.926647,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -16575,6 +17216,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -16932,8 +17581,8 @@
       "delay_seconds": 36970.768867,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -16956,6 +17605,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -17320,7 +17977,7 @@
       "delay_seconds": 36971.1983,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
+        "high": "ready",
         "low": "awaiting_outcome"
       },
       "provider": "open_meteo",
@@ -17344,6 +18001,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -17708,8 +18373,8 @@
       "delay_seconds": 36971.034461,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -17732,6 +18397,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "open_meteo",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -18096,8 +18769,8 @@
       "delay_seconds": 36972.070492,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -18120,6 +18793,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -18484,8 +19165,8 @@
       "delay_seconds": 36971.90812,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -18508,6 +19189,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -18872,8 +19561,8 @@
       "delay_seconds": 36971.977977,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -18896,6 +19585,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -19260,8 +19957,8 @@
       "delay_seconds": 36971.833496,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -19284,6 +19981,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -19648,8 +20353,8 @@
       "delay_seconds": 36971.944921,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -19672,6 +20377,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -20036,8 +20749,8 @@
       "delay_seconds": 36971.79456,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -20060,6 +20773,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -20424,7 +21145,7 @@
       "delay_seconds": 36972.135898,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
+        "high": "ready",
         "low": "awaiting_outcome"
       },
       "provider": "openweathermap",
@@ -20448,6 +21169,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -20812,8 +21541,8 @@
       "delay_seconds": 36972.034707,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -20836,6 +21565,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "openweathermap",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -21032,8 +21769,8 @@
       "delay_seconds": 36973.111135,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -21056,6 +21793,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -21252,8 +21997,8 @@
       "delay_seconds": 36972.687031,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -21276,6 +22021,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -21472,8 +22225,8 @@
       "delay_seconds": 36972.916444,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -21496,6 +22249,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -21692,8 +22453,8 @@
       "delay_seconds": 36972.526106,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -21716,6 +22477,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -21912,8 +22681,8 @@
       "delay_seconds": 36972.767425,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -21936,6 +22705,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -22132,8 +22909,8 @@
       "delay_seconds": 36972.337869,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -22156,6 +22933,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -22352,7 +23137,7 @@
       "delay_seconds": 36973.200438,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
+        "high": "ready",
         "low": "awaiting_outcome"
       },
       "provider": "pirate_weather",
@@ -22376,6 +23161,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -22572,8 +23365,8 @@
       "delay_seconds": 36973.003224,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -22596,6 +23389,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "pirate_weather",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -24872,8 +25673,8 @@
       "delay_seconds": 36973.658205,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -24896,6 +25697,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -25092,8 +25901,8 @@
       "delay_seconds": 36973.430227,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -25116,6 +25925,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -25312,8 +26129,8 @@
       "delay_seconds": 36973.561174,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -25336,6 +26153,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -25532,8 +26357,8 @@
       "delay_seconds": 36973.39236,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -25556,6 +26381,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -25752,8 +26585,8 @@
       "delay_seconds": 36973.485239,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -25776,6 +26609,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -25972,8 +26813,8 @@
       "delay_seconds": 36973.335291,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -25996,6 +26837,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -26192,7 +27041,7 @@
       "delay_seconds": 36973.697307,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
+        "high": "ready",
         "low": "awaiting_outcome"
       },
       "provider": "visual_crossing",
@@ -26216,6 +27065,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-11-11T19:41:57Z",
@@ -26412,8 +27269,8 @@
       "delay_seconds": 36973.604515,
       "kind": "daily",
       "outcomes": {
-        "high": "awaiting_outcome",
-        "low": "awaiting_outcome"
+        "high": "ready",
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -26436,6 +27293,14 @@
       "snapshot_date_utc": "2026-11-25",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "collection_status": "missing",
+      "kind": "daily",
+      "provider": "visual_crossing",
+      "snapshot_date_utc": "2026-11-26",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:22:57Z",
@@ -29362,7 +30227,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -29378,7 +30243,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -29416,6 +30281,38 @@
       "quality": "complete",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.559938Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.559938,
+      "event_ticker": "KXHIGHTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.559938Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.559938,
+      "event_ticker": "KXLOWTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.301779Z",
@@ -30262,7 +31159,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -30278,7 +31175,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -30316,6 +31213,38 @@
       "quality": "complete",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.129497Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.129497,
+      "event_ticker": "KXHIGHCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.129497Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.129497,
+      "event_ticker": "KXLOWTCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.724778Z",
@@ -31162,7 +32091,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -31178,7 +32107,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -31216,6 +32145,38 @@
       "quality": "complete",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.065445Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.065445,
+      "event_ticker": "KXHIGHTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.065445Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.065445,
+      "event_ticker": "KXLOWTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:07.541678Z",
@@ -32062,7 +33023,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -32078,7 +33039,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -32116,6 +33077,38 @@
       "quality": "complete",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.002569Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.002569,
+      "event_ticker": "KXHIGHLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.002569Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.002569,
+      "event_ticker": "KXLOWTLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:08.041773Z",
@@ -32962,7 +33955,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -32978,7 +33971,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -33016,6 +34009,38 @@
       "quality": "complete",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.977834Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.977834,
+      "event_ticker": "KXHIGHMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.977834Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.977834,
+      "event_ticker": "KXLOWTMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:08.648564Z",
@@ -33862,7 +34887,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -33878,7 +34903,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -33916,6 +34941,38 @@
       "quality": "complete",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.038438Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.038438,
+      "event_ticker": "KXHIGHNY-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.038438Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.038438,
+      "event_ticker": "KXLOWTNYC-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:09.178245Z",
@@ -34762,7 +35819,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -34818,6 +35875,38 @@
       "target_date_local": "2026-11-26"
     },
     {
+      "captured_at_utc": "2026-11-26T19:35:01.089805Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.089805,
+      "event_ticker": "KXHIGHTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.089805Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.089805,
+      "event_ticker": "KXLOWTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
       "captured_at_utc": "2026-10-28T18:49:10.136104Z",
       "cohort": "market_late",
       "collection_status": "saved",
@@ -35662,7 +36751,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -35678,7 +36767,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "nws",
       "quality": "complete",
@@ -35716,6 +36805,38 @@
       "quality": "complete",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.000063Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.000063,
+      "event_ticker": "KXHIGHTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.000063Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.000063,
+      "event_ticker": "KXLOWTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "nws",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:04.573792Z",
@@ -36562,7 +37683,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -36578,7 +37699,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -36616,6 +37737,38 @@
       "quality": "complete",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.330750Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.33075,
+      "event_ticker": "KXHIGHTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.330750Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.33075,
+      "event_ticker": "KXLOWTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.047820Z",
@@ -37462,7 +38615,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -37478,7 +38631,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -37516,6 +38669,38 @@
       "quality": "complete",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.958011Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.958011,
+      "event_ticker": "KXHIGHCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.958011Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.958011,
+      "event_ticker": "KXLOWTCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.560944Z",
@@ -38362,7 +39547,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -38378,7 +39563,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -38416,6 +39601,38 @@
       "quality": "complete",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.867430Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.86743,
+      "event_ticker": "KXHIGHTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.867430Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.86743,
+      "event_ticker": "KXLOWTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:07.329236Z",
@@ -39262,7 +40479,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -39278,7 +40495,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -39316,6 +40533,38 @@
       "quality": "complete",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.825855Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.825855,
+      "event_ticker": "KXHIGHLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.825855Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.825855,
+      "event_ticker": "KXLOWTLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:07.824813Z",
@@ -40162,7 +41411,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -40178,7 +41427,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -40216,6 +41465,38 @@
       "quality": "complete",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.823969Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.823969,
+      "event_ticker": "KXHIGHMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.823969Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.823969,
+      "event_ticker": "KXLOWTMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:08.349531Z",
@@ -41062,7 +42343,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -41078,7 +42359,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -41116,6 +42397,38 @@
       "quality": "complete",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.880212Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.880212,
+      "event_ticker": "KXHIGHNY-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.880212Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.880212,
+      "event_ticker": "KXLOWTNYC-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:09.019462Z",
@@ -41962,7 +43275,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -42016,6 +43329,38 @@
       "quality": "complete",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.928233Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.928233,
+      "event_ticker": "KXHIGHTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.928233Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.928233,
+      "event_ticker": "KXLOWTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:09.917213Z",
@@ -42862,7 +44207,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -42878,7 +44223,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "open_meteo",
       "quality": "complete",
@@ -42916,6 +44261,38 @@
       "quality": "complete",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.785638Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.785638,
+      "event_ticker": "KXHIGHTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.785638Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.785638,
+      "event_ticker": "KXLOWTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "open_meteo",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:05.175873Z",
@@ -43762,7 +45139,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -43778,7 +45155,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -43816,6 +45193,38 @@
       "quality": "complete",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.762999Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.762999,
+      "event_ticker": "KXHIGHTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:54.762999Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16494.762999,
+      "event_ticker": "KXLOWTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.336900Z",
@@ -44662,7 +46071,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -44678,7 +46087,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -44716,6 +46125,38 @@
       "quality": "complete",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.299331Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.299331,
+      "event_ticker": "KXHIGHCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.299331Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.299331,
+      "event_ticker": "KXLOWTCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:06.772761Z",
@@ -45562,7 +47003,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -45578,7 +47019,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -45616,6 +47057,38 @@
       "quality": "complete",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.239948Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.239948,
+      "event_ticker": "KXHIGHTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.239948Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.239948,
+      "event_ticker": "KXLOWTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:07.579970Z",
@@ -46462,7 +47935,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -46478,7 +47951,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -46516,6 +47989,38 @@
       "quality": "complete",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.173425Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.173425,
+      "event_ticker": "KXHIGHLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.173425Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.173425,
+      "event_ticker": "KXLOWTLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:08.078239Z",
@@ -47362,7 +48867,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -47378,7 +48883,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -47416,6 +48921,38 @@
       "quality": "complete",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.147885Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.147885,
+      "event_ticker": "KXHIGHMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.147885Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.147885,
+      "event_ticker": "KXLOWTMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:08.691626Z",
@@ -48262,7 +49799,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -48278,7 +49815,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -48316,6 +49853,38 @@
       "quality": "complete",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.205382Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.205382,
+      "event_ticker": "KXHIGHNY-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.205382Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.205382,
+      "event_ticker": "KXLOWTNYC-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:09.225625Z",
@@ -49162,7 +50731,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -49216,6 +50785,38 @@
       "quality": "complete",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.264800Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.2648,
+      "event_ticker": "KXHIGHTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.264800Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.2648,
+      "event_ticker": "KXLOWTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:10.178346Z",
@@ -50062,7 +51663,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -50078,7 +51679,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "openweathermap",
       "quality": "complete",
@@ -50116,6 +51717,38 @@
       "quality": "complete",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.169570Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.16957,
+      "event_ticker": "KXHIGHTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.169570Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.16957,
+      "event_ticker": "KXLOWTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "openweathermap",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missing",
@@ -50614,7 +52247,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -50630,7 +52263,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -50668,6 +52301,38 @@
       "quality": "complete",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.053053Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.053053,
+      "event_ticker": "KXHIGHTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.053053Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.053053,
+      "event_ticker": "KXLOWTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -51166,7 +52831,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -51182,7 +52847,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -51220,6 +52885,38 @@
       "quality": "complete",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.535538Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.535538,
+      "event_ticker": "KXHIGHCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.535538Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.535538,
+      "event_ticker": "KXLOWTCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -51718,7 +53415,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -51734,7 +53431,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -51772,6 +53469,38 @@
       "quality": "complete",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.490029Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.490029,
+      "event_ticker": "KXHIGHTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.490029Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.490029,
+      "event_ticker": "KXLOWTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -52284,7 +54013,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -52300,7 +54029,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -52338,6 +54067,38 @@
       "quality": "complete",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.390380Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.39038,
+      "event_ticker": "KXHIGHLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.390380Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.39038,
+      "event_ticker": "KXLOWTLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missing",
@@ -52836,7 +54597,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -52852,7 +54613,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -52890,6 +54651,38 @@
       "quality": "complete",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.478824Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.478824,
+      "event_ticker": "KXHIGHMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.478824Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.478824,
+      "event_ticker": "KXLOWTMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missing",
@@ -53388,7 +55181,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -53404,7 +55197,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -53442,6 +55235,38 @@
       "quality": "complete",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.546850Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.54685,
+      "event_ticker": "KXHIGHNY-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.546850Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.54685,
+      "event_ticker": "KXLOWTNYC-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -53954,7 +55779,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -54008,6 +55833,38 @@
       "quality": "complete",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.488872Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.488872,
+      "event_ticker": "KXHIGHTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.488872Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.488872,
+      "event_ticker": "KXLOWTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -54520,7 +56377,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -54536,7 +56393,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "pirate_weather",
       "quality": "complete",
@@ -54574,6 +56431,38 @@
       "quality": "complete",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.439008Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.439008,
+      "event_ticker": "KXHIGHTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.439008Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.439008,
+      "event_ticker": "KXLOWTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "pirate_weather",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     },
     {
       "captured_at_utc": "2026-10-28T18:49:05.341483Z",
@@ -60224,7 +62113,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -60240,7 +62129,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -60278,6 +62167,38 @@
       "quality": "complete",
       "station_id": "boston_logan",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.368900Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.3689,
+      "event_ticker": "KXHIGHTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:55.368900Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16495.3689,
+      "event_ticker": "KXLOWTBOS-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "boston_logan",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -60776,7 +62697,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -60792,7 +62713,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -60830,6 +62751,38 @@
       "quality": "complete",
       "station_id": "chicago_midway",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.706554Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.706554,
+      "event_ticker": "KXHIGHCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:56.706554Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16496.706554,
+      "event_ticker": "KXLOWTCHI-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "chicago_midway",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -61328,7 +63281,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -61344,7 +63297,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -61382,6 +63335,38 @@
       "quality": "complete",
       "station_id": "dallas_fort_worth",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.657310Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.65731,
+      "event_ticker": "KXHIGHTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:57.657310Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16497.65731,
+      "event_ticker": "KXLOWTDAL-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "dallas_fort_worth",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -61894,7 +63879,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -61910,7 +63895,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -61948,6 +63933,38 @@
       "quality": "complete",
       "station_id": "los_angeles_lax",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.544512Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.544512,
+      "event_ticker": "KXHIGHLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:58.544512Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16498.544512,
+      "event_ticker": "KXLOWTLAX-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "los_angeles_lax",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missing",
@@ -62446,7 +64463,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -62462,7 +64479,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -62500,6 +64517,38 @@
       "quality": "complete",
       "station_id": "miami_international",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.659956Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.659956,
+      "event_ticker": "KXHIGHMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:34:59.659956Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16499.659956,
+      "event_ticker": "KXLOWTMIA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "miami_international",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missing",
@@ -62998,7 +65047,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -63014,7 +65063,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -63052,6 +65101,38 @@
       "quality": "complete",
       "station_id": "nyc_central_park",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.686156Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.686156,
+      "event_ticker": "KXHIGHNY-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:00.686156Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16500.686156,
+      "event_ticker": "KXLOWTNYC-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "nyc_central_park",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -63564,7 +65645,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -63618,6 +65699,38 @@
       "quality": "complete",
       "station_id": "san_francisco_sfo",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.614642Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.614642,
+      "event_ticker": "KXHIGHTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:01.614642Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16501.614642,
+      "event_ticker": "KXLOWTSFO-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "san_francisco_sfo",
+      "target_date_local": "2026-11-27"
     },
     {
       "collection_status": "missed_before_measurement_start",
@@ -64130,7 +66243,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "high": "awaiting_outcome"
+        "high": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -64146,7 +66259,7 @@
       "kind": "market",
       "market_open_time_utc": "2026-11-24T15:00:00Z",
       "outcomes": {
-        "low": "awaiting_outcome"
+        "low": "ready"
       },
       "provider": "visual_crossing",
       "quality": "complete",
@@ -64184,6 +66297,38 @@
       "quality": "complete",
       "station_id": "seattle_tacoma",
       "target_date_local": "2026-11-26"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.598626Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.598626,
+      "event_ticker": "KXHIGHTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "high": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
+    },
+    {
+      "captured_at_utc": "2026-11-26T19:35:02.598626Z",
+      "cohort": "market_late",
+      "collection_status": "saved",
+      "delay_seconds": 16502.598626,
+      "event_ticker": "KXLOWTSEA-26NOV27",
+      "kind": "market",
+      "market_open_time_utc": "2026-11-26T15:00:00Z",
+      "outcomes": {
+        "low": "measurement_pending"
+      },
+      "provider": "visual_crossing",
+      "quality": "complete",
+      "station_id": "seattle_tacoma",
+      "target_date_local": "2026-11-27"
     }
   ],
   "status": "complete",
@@ -64193,16 +66338,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.254501Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64216,16 +66361,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:33.966176Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64239,16 +66384,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:34.617410Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64262,16 +66407,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:33.671127Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64285,16 +66430,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:34.306997Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64308,16 +66453,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:33.371269Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64331,16 +66476,17 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.582430Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
+        "awaiting_outcome": 1,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 17
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64354,16 +66500,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:34.933760Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "nws",
       "quality_statuses": {
@@ -64377,16 +66523,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:33.011278Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64400,16 +66546,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.912850Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64423,16 +66569,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.962140Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64446,17 +66592,17 @@
         "daily_late": 28
       },
       "collection_statuses": {
+        "missing": 1,
         "request_failed": 1,
         "saved": 28
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.887123Z",
       "median_delay_seconds": 27120.82719,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 14
+        "ready": 16
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64470,17 +66616,16 @@
         "daily_late": 28
       },
       "collection_statuses": {
-        "missing": 1,
+        "missing": 2,
         "saved": 28
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.937175Z",
       "median_delay_seconds": 27120.901148,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64494,17 +66639,17 @@
         "daily_late": 28
       },
       "collection_statuses": {
+        "missing": 1,
         "request_failed": 1,
         "saved": 28
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.552203Z",
       "median_delay_seconds": 27120.7892865,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 14
+        "ready": 16
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64518,16 +66663,17 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:33.035187Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
+        "awaiting_outcome": 1,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 17
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64541,16 +66687,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:32.986705Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "open_meteo",
       "quality_statuses": {
@@ -64564,16 +66710,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.876898Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64587,16 +66733,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.709563Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64610,16 +66756,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.791537Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64633,16 +66779,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.662370Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64656,16 +66802,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.750093Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64679,16 +66825,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.619689Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64702,16 +66848,17 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.932262Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
+        "awaiting_outcome": 1,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 17
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64725,16 +66872,16 @@
         "daily_late": 29
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 29
       },
-      "expected": 29,
+      "expected": 30,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:35.831665Z",
       "median_delay_seconds": 27171.0,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "openweathermap",
       "quality_statuses": {
@@ -64748,16 +66895,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:37.749646Z",
       "median_delay_seconds": 29532.886633,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64771,16 +66918,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:36.873780Z",
       "median_delay_seconds": 29532.124806,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64794,16 +66941,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:37.282180Z",
       "median_delay_seconds": 29532.462545,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64817,16 +66964,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:36.515678Z",
       "median_delay_seconds": 29531.936562,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64840,16 +66987,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:37.092268Z",
       "median_delay_seconds": 29532.304772,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64863,16 +67010,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:36.347651Z",
       "median_delay_seconds": 29531.785907,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64886,16 +67033,17 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:37.915540Z",
       "median_delay_seconds": 29533.101972,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
+        "awaiting_outcome": 1,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 17
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -64909,16 +67057,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:37.453914Z",
       "median_delay_seconds": 29532.651382,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "pirate_weather",
       "quality_statuses": {
@@ -65100,16 +67248,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:39.459897Z",
       "median_delay_seconds": 29534.248937,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65123,16 +67271,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:38.583656Z",
       "median_delay_seconds": 29533.647533,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65146,16 +67294,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:39.042521Z",
       "median_delay_seconds": 29533.939201,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65169,16 +67317,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:38.360804Z",
       "median_delay_seconds": 29533.498644,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65192,16 +67340,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:38.824089Z",
       "median_delay_seconds": 29533.772526,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65215,16 +67363,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:38.157752Z",
       "median_delay_seconds": 29533.325832,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65238,16 +67386,17 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:39.752128Z",
       "median_delay_seconds": 29534.387153,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
+        "awaiting_outcome": 1,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 17
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65261,16 +67410,16 @@
         "daily_late": 15
       },
       "collection_statuses": {
+        "missing": 1,
         "saved": 15
       },
-      "expected": 15,
+      "expected": 16,
       "kind": "daily",
       "latest_capture_utc": "2026-11-25T21:47:39.254538Z",
       "median_delay_seconds": 29534.112748,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
         "measurement_pending": 2,
-        "ready": 16
+        "ready": 18
       },
       "provider": "visual_crossing",
       "quality_statuses": {
@@ -65449,764 +67598,736 @@
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:01.061323Z",
-      "median_delay_seconds": 13956.941017,
+      "latest_capture_utc": "2026-11-26T19:34:54.559938Z",
+      "median_delay_seconds": 15208.473007,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "boston_logan"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:08.436782Z",
-      "median_delay_seconds": 13958.831804,
+      "latest_capture_utc": "2026-11-26T19:34:56.129497Z",
+      "median_delay_seconds": 15209.7159355,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "chicago_midway"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:27.841526Z",
-      "median_delay_seconds": 13960.681316,
+      "latest_capture_utc": "2026-11-26T19:34:57.065445Z",
+      "median_delay_seconds": 15210.868573,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "dallas_fort_worth"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:34.997425Z",
-      "median_delay_seconds": 13962.429159,
+      "latest_capture_utc": "2026-11-26T19:34:58.002569Z",
+      "median_delay_seconds": 15212.137716,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "los_angeles_lax"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.001710Z",
-      "median_delay_seconds": 13995.277187,
+      "latest_capture_utc": "2026-11-26T19:34:58.977834Z",
+      "median_delay_seconds": 15228.8076,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "miami_international"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.959200Z",
-      "median_delay_seconds": 13997.119505,
+      "latest_capture_utc": "2026-11-26T19:35:00.038438Z",
+      "median_delay_seconds": 15229.950604000001,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "nyc_central_park"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:56.484732Z",
-      "median_delay_seconds": 13998.819362,
+      "latest_capture_utc": "2026-11-26T19:35:01.089805Z",
+      "median_delay_seconds": 15231.207071,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "awaiting_outcome": 1,
+        "measurement_pending": 4,
+        "ready": 51
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "san_francisco_sfo"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:10.909635Z",
-      "median_delay_seconds": 14000.741562,
+      "latest_capture_utc": "2026-11-26T19:35:02.000063Z",
+      "median_delay_seconds": 15232.393267,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "nws",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "seattle_tacoma"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:00.780502Z",
-      "median_delay_seconds": 17344.573792,
+      "latest_capture_utc": "2026-11-26T19:34:54.330750Z",
+      "median_delay_seconds": 16919.452271000002,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "boston_logan"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:08.206104Z",
-      "median_delay_seconds": 17346.04782,
+      "latest_capture_utc": "2026-11-26T19:34:55.958011Z",
+      "median_delay_seconds": 16921.0029155,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "chicago_midway"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:27.551321Z",
-      "median_delay_seconds": 13960.196189,
+      "latest_capture_utc": "2026-11-26T19:34:56.867430Z",
+      "median_delay_seconds": 15210.5336665,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "dallas_fort_worth"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:34.769466Z",
-      "median_delay_seconds": 13962.038228,
+      "latest_capture_utc": "2026-11-26T19:34:57.825855Z",
+      "median_delay_seconds": 15211.8317275,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "los_angeles_lax"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:35.762155Z",
-      "median_delay_seconds": 13994.772312,
+      "latest_capture_utc": "2026-11-26T19:34:58.823969Z",
+      "median_delay_seconds": 15228.448829,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "miami_international"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.708494Z",
-      "median_delay_seconds": 13996.704653,
+      "latest_capture_utc": "2026-11-26T19:34:59.880212Z",
+      "median_delay_seconds": 15229.672437500001,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "nyc_central_park"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:56.175659Z",
-      "median_delay_seconds": 13998.45788,
+      "latest_capture_utc": "2026-11-26T19:35:00.928233Z",
+      "median_delay_seconds": 15230.932209999999,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "awaiting_outcome": 1,
+        "measurement_pending": 4,
+        "ready": 51
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "san_francisco_sfo"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:10.670844Z",
-      "median_delay_seconds": 14000.200687,
+      "latest_capture_utc": "2026-11-26T19:35:01.785638Z",
+      "median_delay_seconds": 15232.0483295,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "open_meteo",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "seattle_tacoma"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:01.268327Z",
-      "median_delay_seconds": 13957.178775,
+      "latest_capture_utc": "2026-11-26T19:34:54.762999Z",
+      "median_delay_seconds": 15208.651409,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "boston_logan"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:08.618151Z",
-      "median_delay_seconds": 13959.075196,
+      "latest_capture_utc": "2026-11-26T19:34:56.299331Z",
+      "median_delay_seconds": 15209.865228999999,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "chicago_midway"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:28.026415Z",
-      "median_delay_seconds": 13960.931545,
+      "latest_capture_utc": "2026-11-26T19:34:57.239948Z",
+      "median_delay_seconds": 15211.019603499999,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "dallas_fort_worth"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:35.179209Z",
-      "median_delay_seconds": 13962.635669,
+      "latest_capture_utc": "2026-11-26T19:34:58.173425Z",
+      "median_delay_seconds": 15212.2627245,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "los_angeles_lax"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.184505Z",
-      "median_delay_seconds": 13995.447276,
+      "latest_capture_utc": "2026-11-26T19:34:59.147885Z",
+      "median_delay_seconds": 15228.920141499999,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "miami_international"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:37.141671Z",
-      "median_delay_seconds": 13997.291511,
+      "latest_capture_utc": "2026-11-26T19:35:00.205382Z",
+      "median_delay_seconds": 15230.0634075,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "nyc_central_park"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:56.667604Z",
-      "median_delay_seconds": 13999.002532,
+      "latest_capture_utc": "2026-11-26T19:35:01.264800Z",
+      "median_delay_seconds": 15231.328516500002,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "awaiting_outcome": 1,
+        "measurement_pending": 4,
+        "ready": 51
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "san_francisco_sfo"
     },
     {
       "cohorts": {
-        "market_late": 52,
+        "market_late": 54,
         "market_near_open": 2
       },
       "collection_statuses": {
         "missed_before_measurement_start": 4,
-        "saved": 54
+        "saved": 56
       },
-      "expected": 58,
+      "expected": 60,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:11.093699Z",
-      "median_delay_seconds": 14000.915455,
+      "latest_capture_utc": "2026-11-26T19:35:02.169570Z",
+      "median_delay_seconds": 15232.519166000002,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 50
+        "measurement_pending": 4,
+        "ready": 52
       },
       "provider": "openweathermap",
       "quality_statuses": {
-        "complete": 54
+        "complete": 56
       },
       "station_id": "seattle_tacoma"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:07.730094Z",
-      "median_delay_seconds": 18275.147566,
+      "latest_capture_utc": "2026-11-26T19:34:55.053053Z",
+      "median_delay_seconds": 17385.100309499998,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "boston_logan"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 8,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T22:51:44.356044Z",
-      "median_delay_seconds": 21479.050946,
+      "latest_capture_utc": "2026-11-26T19:34:56.535538Z",
+      "median_delay_seconds": 19877.2627795,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "chicago_midway"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 8,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:34.464934Z",
-      "median_delay_seconds": 18275.754636,
+      "latest_capture_utc": "2026-11-26T19:34:57.490029Z",
+      "median_delay_seconds": 17386.622332500003,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "dallas_fort_worth"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:35.456124Z",
-      "median_delay_seconds": 19879.1928585,
+      "latest_capture_utc": "2026-11-26T19:34:58.390380Z",
+      "median_delay_seconds": 18276.052061,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "measurement_pending": 4,
+        "ready": 30
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "los_angeles_lax"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.429893Z",
-      "median_delay_seconds": 18276.321499,
+      "latest_capture_utc": "2026-11-26T19:34:59.478824Z",
+      "median_delay_seconds": 17387.9001615,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "miami_international"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T22:51:44.623634Z",
-      "median_delay_seconds": 21503.547018,
+      "latest_capture_utc": "2026-11-26T19:35:00.546850Z",
+      "median_delay_seconds": 19890.077055499998,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "nyc_central_park"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:10.269155Z",
-      "median_delay_seconds": 19891.068051000002,
+      "latest_capture_utc": "2026-11-26T19:35:01.488872Z",
+      "median_delay_seconds": 18276.883695,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "awaiting_outcome": 1,
+        "measurement_pending": 4,
+        "ready": 29
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "san_francisco_sfo"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:11.343191Z",
-      "median_delay_seconds": 19892.0641015,
+      "latest_capture_utc": "2026-11-26T19:35:02.439008Z",
+      "median_delay_seconds": 18277.169838,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "measurement_pending": 4,
+        "ready": 30
       },
       "provider": "pirate_weather",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "seattle_tacoma"
     },
@@ -66388,188 +68509,181 @@
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:08.085033Z",
-      "median_delay_seconds": 18275.23464,
+      "latest_capture_utc": "2026-11-26T19:34:55.368900Z",
+      "median_delay_seconds": 17385.30177,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "boston_logan"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 8,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:27.427906Z",
-      "median_delay_seconds": 18275.515449,
+      "latest_capture_utc": "2026-11-26T19:34:56.706554Z",
+      "median_delay_seconds": 17386.1110015,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "chicago_midway"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 8,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:34.658330Z",
-      "median_delay_seconds": 18275.80117,
+      "latest_capture_utc": "2026-11-26T19:34:57.657310Z",
+      "median_delay_seconds": 17386.72924,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "dallas_fort_worth"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:35.649080Z",
-      "median_delay_seconds": 19879.278129500002,
+      "latest_capture_utc": "2026-11-26T19:34:58.544512Z",
+      "median_delay_seconds": 18276.088934,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "measurement_pending": 4,
+        "ready": 30
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "los_angeles_lax"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:36.582539Z",
-      "median_delay_seconds": 18276.369646,
+      "latest_capture_utc": "2026-11-26T19:34:59.659956Z",
+      "median_delay_seconds": 17388.014800999998,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "miami_international"
     },
     {
       "cohorts": {
-        "market_late": 30
+        "market_late": 32
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
         "missing": 2,
-        "saved": 30
+        "saved": 32
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:33:55.862503Z",
-      "median_delay_seconds": 18276.638797,
+      "latest_capture_utc": "2026-11-26T19:35:00.686156Z",
+      "median_delay_seconds": 17388.6624765,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 26
+        "measurement_pending": 4,
+        "ready": 28
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 30
+        "complete": 32
       },
       "station_id": "nyc_central_park"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:10.553483Z",
-      "median_delay_seconds": 19891.202604500002,
+      "latest_capture_utc": "2026-11-26T19:35:01.614642Z",
+      "median_delay_seconds": 18276.913502,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "awaiting_outcome": 1,
+        "measurement_pending": 4,
+        "ready": 29
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "san_francisco_sfo"
     },
     {
       "cohorts": {
-        "market_late": 32
+        "market_late": 34
       },
       "collection_statuses": {
         "missed_before_measurement_start": 6,
-        "saved": 32
+        "saved": 34
       },
-      "expected": 38,
+      "expected": 40,
       "kind": "market",
-      "latest_capture_utc": "2026-11-25T15:34:11.537264Z",
-      "median_delay_seconds": 19892.2037175,
+      "latest_capture_utc": "2026-11-26T19:35:02.598626Z",
+      "median_delay_seconds": 18277.196814,
       "outcome_statuses": {
-        "awaiting_outcome": 2,
-        "measurement_pending": 2,
-        "ready": 28
+        "measurement_pending": 4,
+        "ready": 30
       },
       "provider": "visual_crossing",
       "quality_statuses": {
-        "complete": 32
+        "complete": 34
       },
       "station_id": "seattle_tacoma"
     }
