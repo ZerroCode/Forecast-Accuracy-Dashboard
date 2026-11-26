@@ -18,7 +18,7 @@
   },
   "comparison_tolerance_seconds": 600,
   "excluded_providers": [],
-  "generated_at_utc": "2026-11-25T22:56:38Z",
+  "generated_at_utc": "2026-11-26T00:15:27Z",
   "groups": [
     {
       "candidate_cases": 64,
@@ -1137,7 +1137,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 200,
+      "candidate_cases": 192,
       "capture_time_mismatch_cases": 16,
       "cohort": "market_late",
       "common_cases": 91,
@@ -1186,7 +1186,7 @@
           "within_2f": 0.4505
         }
       ],
-      "missing_provider_cases": 93,
+      "missing_provider_cases": 85,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1199,7 +1199,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 4,
       "cohort": "market_late",
       "common_cases": 9,
@@ -1248,7 +1248,7 @@
           "within_2f": 0.4444
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1261,7 +1261,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 3,
       "cohort": "market_late",
       "common_cases": 10,
@@ -1310,7 +1310,7 @@
           "within_2f": 0.2
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1323,7 +1323,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1372,7 +1372,7 @@
           "within_2f": 0.5
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1385,7 +1385,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1434,7 +1434,7 @@
           "within_2f": 0.5
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1447,7 +1447,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1496,7 +1496,7 @@
           "within_2f": 0.5
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1509,7 +1509,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1558,7 +1558,7 @@
           "within_2f": 0.5
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1571,7 +1571,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1620,7 +1620,7 @@
           "within_2f": 0.5833
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1633,7 +1633,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1682,7 +1682,7 @@
           "within_2f": 0.3333
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1695,7 +1695,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 200,
+      "candidate_cases": 192,
       "capture_time_mismatch_cases": 16,
       "cohort": "market_late",
       "common_cases": 91,
@@ -1744,7 +1744,7 @@
           "within_2f": 0.5385
         }
       ],
-      "missing_provider_cases": 93,
+      "missing_provider_cases": 85,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1757,7 +1757,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 4,
       "cohort": "market_late",
       "common_cases": 9,
@@ -1806,7 +1806,7 @@
           "within_2f": 0.3333
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1819,7 +1819,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 3,
       "cohort": "market_late",
       "common_cases": 10,
@@ -1868,7 +1868,7 @@
           "within_2f": 0.7
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1881,7 +1881,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1930,7 +1930,7 @@
           "within_2f": 0.5833
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -1943,7 +1943,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -1992,7 +1992,7 @@
           "within_2f": 0.8333
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -2005,7 +2005,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -2054,7 +2054,7 @@
           "within_2f": 0.75
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -2067,7 +2067,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 1,
       "cohort": "market_late",
       "common_cases": 12,
@@ -2116,7 +2116,7 @@
           "within_2f": 0.3333
         }
       ],
-      "missing_provider_cases": 12,
+      "missing_provider_cases": 11,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -2129,7 +2129,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -2178,7 +2178,7 @@
           "within_2f": 0.3333
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -2191,7 +2191,7 @@
       "status": "scored"
     },
     {
-      "candidate_cases": 25,
+      "candidate_cases": 24,
       "capture_time_mismatch_cases": 2,
       "cohort": "market_late",
       "common_cases": 12,
@@ -2240,7 +2240,7 @@
           "within_2f": 0.4167
         }
       ],
-      "missing_provider_cases": 11,
+      "missing_provider_cases": 10,
       "outcome_source": "kalshi_settlement:The Weather Company",
       "providers": [
         "nws",
@@ -3374,11 +3374,11 @@
   "near_open_coverage": {
     "metrics": {
       "high": {
-        "expected_station_days": 240,
+        "expected_station_days": 232,
         "qualified_station_days": 0
       },
       "low": {
-        "expected_station_days": 240,
+        "expected_station_days": 232,
         "qualified_station_days": 0
       }
     },
